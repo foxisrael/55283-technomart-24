@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Dmitriy Zamanskiy](https://up.htmlacademy.ru/htmlcss/24/user/55283).
-* Наставник: `Неизвестно`.
+* Наставник: [Данила Прокопенко] (https://htmlacademy.ru/profile/id324297).
 
 ---
 
