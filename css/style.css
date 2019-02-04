@@ -1,0 +1,211 @@
+html, body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h1 {
+  font-family: cuprum;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: cuprum;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+h3 {  font-family: cuprum;
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFF;
+  margin: 0;
+}
+
+p {
+  font-family: "Pt Sans";
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+/* HEADER */
+
+.header__top {
+  width: 100%;
+  height: 42px;
+  background: #293449;
+}
+
+.logo {
+  display: block;
+  /* position: relative; */
+  top: 0px;
+  width: 120px;
+  height: 22px;
+  padding: 10px 50px;
+  text-align: center;
+  background: #ee3643;
+  border-bottom: 5px solid #b52933;
+  color: white;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* MAIN */
+
+.cataloge__item{
+  display: block;
+  width: 300px;
+  height: 123px;
+  padding: 25px 0 0 25px;
+  box-sizing: border-box;
+}
+
+.cataloge__item h3{
+  font-family: Cuprum;
+  margin-bottom: 20px;
+}
+
+.cataloge__item span{
+  display: block;
+  width: 135px;
+  height: 38px;
+  background: rgba(0, 0, 0, 0.1);
+  font-family: Cuprum;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.material{
+  position: relative;
+  background: #ffbf47 url("../img/icon-materials.png") no-repeat 214px 28px;
+}
+
+.tools{
+  position: relative;
+  background: #3bbce3 url("../img/icon-tools.png") no-repeat 214px 28px;
+}
+
+.technics{
+  position: relative;
+  background: #dc91d8 url("../img/icon-tractor.png") no-repeat 214px 28px;
+}
+
+.sale{
+  position: relative;
+  background: #8ed78f url("../img/icon-sale.png") no-repeat 214px 28px;
+}
+
+.delivery{
+  position: relative;
+  background: #ffc047 url("../img/icon-delivery.png") no-repeat 214px 28px;
+}
+
+.cataloge__slider{
+  position: relative;
+}
+
+.cataloge__slider-1{
+  background: url("../img/slider-1.jpg") no-repeat;
+  width: 620px;
+  height: 268px;
+}
+
+.cataloge__slider-2{
+  display: none;
+  background: url("../img/slider-2.jpg") no-repeat;
+  width: 620px;
+  height: 268px;
+}
+
+
+
+
+
+.product__cataloge--item{
+  display: block;
+  width: 220px;
+  height: 320px;
+  border: 1px solid #9c9da1;
+}
+
+.bfg2000{
+  background: url("../img/bfg-2000.png") no-repeat 0px 40px;
+}
+
+.bfg3000{
+  background: url("../img/bfg-3000.png") no-repeat 0px 40px;
+}
+
+.bfg6000{
+  background: url("../img/bfg-6000.png") no-repeat 0px 40px;
+}
+
+.bfg9000{
+  background: url("../img/bfg-9000.png") no-repeat 0px 40px;
+}
+
+
+
+
+.product__cataloge--header{
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  margin-top: 200px;
+}
+
+.product__cataloge--oldprice {
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #a9a9a9;
+  text-decoration: line-through;
+  margin-top: 20px;
+}
+
+.product__cataloge--newprice {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background: #ee3643;
+  margin-top: 20px;
+}
