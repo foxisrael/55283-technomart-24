@@ -25,7 +25,7 @@ h2 {
   font-size: 36px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-top: 0;
+  margin: 0;
 }
 
 h3 {
@@ -47,6 +47,10 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.hidden{
+  display: none;
 }
 
 .container {
@@ -221,7 +225,7 @@ a {
   margin: 0;
 }
 
-..header__nav li{
+.header__nav li{
   text-align: center;
 }
 
@@ -340,7 +344,30 @@ a {
   background: url("../img/bfg-9000.png") no-repeat 0px 40px;
 }
 
+.product__header,
+.companys__header{
+  display: flex;
+  justify-content: space-between;
+  background: #f9f5f0;
+  padding: 20px;
+}
 
+.product__header--button,
+.companys__header--button,
+.about__company--button,
+.about__contacts--button{
+  display: block;
+  background: #ee3643;
+  color: #fff;
+  width: 253px;
+  height: 38px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: Cuprum;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px;
+}
 
 
 .product__cataloge--header{
@@ -373,4 +400,213 @@ a {
   color: #fff;
   background: #ee3643;
   margin-top: 20px;
+}
+
+.companys__items ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.companys__item{
+  width: 220px;
+  height: 145px;
+  box-sizing: border-box;
+  border: 1px solid #eaeaea;
+}
+
+.bosch{
+  display: block;
+  background: url("../img/logo-bosch.png") center center no-repeat;
+}
+
+.makita{
+  display: block;
+  background: url("../img/logo-makita.png") center center no-repeat;
+}
+
+.dewalt{
+  display: block;
+  background: url("../img/logo-dewalt.png") center center no-repeat;
+}
+
+.interskol{
+  display: block;
+  background: url("../img/logo-interskol.png") center center no-repeat;
+}
+
+.hitachi{
+  display: block;
+  background: url("../img/logo-hitachi.png") center center no-repeat;
+}
+
+.lg{
+  display: block;
+  background: url("../img/logo-lg.png") center center no-repeat;
+}
+
+.aeg{
+  display: block;
+  background: url("../img/logo-aeg.png") center center no-repeat;
+}
+
+.metabo{
+  display: block;
+  background: url("../img/logo-metabo.png") center center no-repeat;
+}
+
+.service{
+  background: #f4f8fa;
+  box-sizing: border-box;
+  padding: 70px 0;
+}
+
+.service__features-content{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.service__features-content::before{
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/vertical-shadow.png") no-repeat;
+  width: 10px;
+  height: 272px;
+  left: 230px;
+}
+
+.service__features--delivery,
+.service__features--garanty,
+.service__features--credit{
+  display: block;
+  width: 240px;
+  height: 60px;
+  background: #32425c;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 20px 0 20px 20px;
+}
+
+.service__features--delivery-active{
+  background: #fff;
+  color: #32425c;
+}
+
+.service__content{
+  padding-left: 80px;
+}
+
+.service__content--delivery,
+.service__content--garanty,
+.service__content--credit{
+  position: relative;
+}
+
+.service__content--delivery::after{
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/delivery.png") no-repeat;
+  width: 468px;
+  height: 261px;
+}
+
+.service__content--garanty::after{
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/garanty.png") no-repeat;
+  width: 468px;
+  height: 261px;
+}
+
+.service__content--credit::after{
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/credit.png") no-repeat;
+  width: 468px;
+  height: 261px;
+}
+
+.about{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__contacts--map{
+  display: block;
+  width: 300px;
+  height: 158px;
+  background: url("../img/map-small.jpg") no-repeat;
+}
+
+/* FOOTER */
+.footer__top{
+  display: flex;
+  justify-content: space-between;
+  background: #32425c;
+}
+
+.footer__contacts p{
+  color: #fff;
+}
+
+.footer__nav ul{
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+}
+
+.footer__nav li{
+  text-align: center;
+}
+
+.footer__nav a{
+  font-family: Cuprum;
+  font-size: 17px;
+  color: #fff;
+  text-align: left;
+}
+
+.footer__nav--bottom a{
+  color: #ffd180;
+}
+
+.footer__bottom{
+  display: flex;
+  justify-content: space-between;
+  background: #293449;
+  color: #fff;
+}
+
+.social--button{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #212a3a;
+}
+
+.footer__bottom--social{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.vk{
+  background: url("../img/icon-vk.svg") center no-repeat;
+}
+
+.fb{
+  background: url("../img/icon-fb.svg") center no-repeat;
+}
+
+.inst{
+  background: url("../img/icon-insta.svg") center no-repeat;
 }
