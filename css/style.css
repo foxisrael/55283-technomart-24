@@ -610,3 +610,10 @@ a {
 .inst{
   background: url("../img/icon-insta.svg") center no-repeat;
 }
+
+
+/* CATALOH.HTML */
+.filter{
+  display: flex;
+  justify-content: space-between;
+}
