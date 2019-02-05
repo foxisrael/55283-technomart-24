@@ -319,29 +319,57 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .product__cataloge--item{
   display: block;
+  position: relative;
   width: 220px;
   height: 320px;
   border: 1px solid #9c9da1;
 }
 
 .bfg2000{
+  display: block;
   background: url("../img/bfg-2000.png") no-repeat 0px 40px;
+  position: relative;
 }
 
 .bfg3000{
   background: url("../img/bfg-3000.png") no-repeat 0px 40px;
+  position: relative;
 }
 
 .bfg6000{
   background: url("../img/bfg-6000.png") no-repeat 0px 40px;
+  position: relative;
 }
 
 .bfg9000{
   background: url("../img/bfg-9000.png") no-repeat 0px 40px;
+  position: relative;
+}
+
+.bfg2000-flag,
+.bfg3000-flag,
+.bfg6000-flag,
+.bfg9000-flag{
+  position: relative;
+}
+
+.bfg2000-flag::after,
+.bfg3000-flag::after,
+.bfg6000-flag::after,
+.bfg9000-flag::after{
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/flag-new.png") no-repeat;
+  width: 60px;
+  height: 59px;
+  top: 0;
+  right: 0;
 }
 
 .product__header,
