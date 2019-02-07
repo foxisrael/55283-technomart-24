@@ -242,8 +242,7 @@ a {
 .cataloge__item{
   padding: 25px 0 0 25px;
   box-sizing: border-box;
-  min-width: 300px;
-  height: 122px;
+  width: 30%;
 }
 
 .cataloge__item h3{
@@ -410,13 +409,20 @@ a {
   flex-wrap: wrap;
 }
 
-.companys__item{
-  display: block;
+.companys__items li{
+  display: flex;
+  justify-content: center;
   text-align: center;
-  width: 220px;
+  width: 24%;
   height: 145px;
   box-sizing: border-box;
   border: 1px solid #eaeaea;
+}
+
+.companys__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .companys__item img{
