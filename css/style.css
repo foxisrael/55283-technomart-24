@@ -240,17 +240,17 @@ a {
 }
 
 .cataloge__item{
-  display: block;
   padding: 25px 0 0 25px;
   box-sizing: border-box;
+  min-width: 300px;
+  height: 122px;
 }
 
 .cataloge__item h3{
-  font-family: Cuprum;
   margin-bottom: 20px;
 }
 
-.cataloge__item span{
+.cataloge__item a{
   display: block;
   width: 135px;
   height: 38px;
@@ -267,31 +267,37 @@ a {
 
 .material{
   position: relative;
-  background: #ffbf47 url("../img/icon-materials.png") no-repeat 214px 28px;
+  background: #ffbf47 url("../img/icon-material.svg") no-repeat 214px 28px;
+  order: 1;
 }
 
 .tools{
   position: relative;
-  background: #3bbce3 url("../img/icon-tools.png") no-repeat 214px 28px;
+  background: #3bbce3 url("../img/icon-tools.svg") no-repeat 214px 28px;
+  order: 2;
 }
 
 .technics{
   position: relative;
-  background: #dc91d8 url("../img/icon-tractor.png") no-repeat 214px 28px;
+  background: #dc91d8 url("../img/icon-technics.svg") no-repeat 214px 28px;
+  order: 3;
 }
 
 .sale{
   position: relative;
-  background: #8ed78f url("../img/icon-sale.png") no-repeat 214px 28px;
+  background: #8ed78f url("../img/icon-sale.svg") no-repeat 214px 28px;
+  order: 5;
 }
 
 .delivery{
   position: relative;
-  background: #ffc047 url("../img/icon-delivery.png") no-repeat 214px 28px;
+  background: #ffc047 url("../img/icon-delivery.svg") no-repeat 214px 28px;
+  order: 6;
 }
 
 .cataloge__slider{
   position: relative;
+  order: 4;
 }
 
 .cataloge__slider-1{
@@ -315,9 +321,7 @@ a {
 }
 
 .product__cataloge--item{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  text-align: center;
   position: relative;
   border: 1px solid #9c9da1;
 }
@@ -400,57 +404,23 @@ a {
   margin-top: 20px;
 }
 
-.companys__items ul{
+.companys__items{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .companys__item{
+  display: block;
+  text-align: center;
   width: 220px;
   height: 145px;
   box-sizing: border-box;
   border: 1px solid #eaeaea;
 }
 
-.bosch{
-  display: block;
-  background: url("../img/logo-bosch.png") center center no-repeat;
-}
-
-.makita{
-  display: block;
-  background: url("../img/logo-makita.png") center center no-repeat;
-}
-
-.dewalt{
-  display: block;
-  background: url("../img/logo-dewalt.png") center center no-repeat;
-}
-
-.interskol{
-  display: block;
-  background: url("../img/logo-interskol.png") center center no-repeat;
-}
-
-.hitachi{
-  display: block;
-  background: url("../img/logo-hitachi.png") center center no-repeat;
-}
-
-.lg{
-  display: block;
-  background: url("../img/logo-lg.png") center center no-repeat;
-}
-
-.aeg{
-  display: block;
-  background: url("../img/logo-aeg.png") center center no-repeat;
-}
-
-.metabo{
-  display: block;
-  background: url("../img/logo-metabo.png") center center no-repeat;
+.companys__item img{
+  margin: 0 auto;
 }
 
 .service{
