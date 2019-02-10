@@ -114,7 +114,15 @@ a {
   color: #fff;
   width: 150px;
   text-align: center;
-  padding-top: 10px;
+  padding: 10px 0 0 15px;
+}
+
+.header__top--checkout {
+  padding-left: 10px;
+}
+
+.header__top--cart-active{
+  background: #ee3643;
 }
 
 .header__top--checkout {
@@ -138,7 +146,8 @@ a {
   background: url("../img/icon-cart.svg");
   width: 14px;
   height: 16px;
-  left: 5px;
+  left: 10px;
+  top: 13px;
 }
 
 /* HEADER MIDDLE */
@@ -254,7 +263,20 @@ a {
 }
 
 /* MAIN */
-.cataloge {
+.loge {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs ul,
+.filter__products--line{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cataloge,
+.product__cataloge{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -337,12 +359,22 @@ a {
   display: flex;
   justify-content: space-between;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .product__cataloge--item {
   text-align: center;
   position: relative;
   border: 1px solid #9c9da1;
+  box-sizing: border-box;
+  padding: 45px 20px 20px;
+}
+
+.product__cataloge--bfg2000,
+.product__cataloge--bfg3000,
+.product__cataloge--bfg6000,
+.product__cataloge--bfg9000{
+  margin-bottom: 20px;
 }
 
 .bfg2000-flag,
@@ -352,16 +384,9 @@ a {
   position: relative;
 }
 
-.bfg2000-flag::after,
-.bfg3000-flag::after,
-.bfg6000-flag::after,
-.bfg9000-flag::after {
+.bfg-flag{
   display: block;
-  content: "";
   position: absolute;
-  background: url("../img/flag-new.png") no-repeat;
-  width: 60px;
-  height: 59px;
   top: 0;
   right: 0;
 }
@@ -397,6 +422,7 @@ a {
   font-weight: bold;
   text-align: center;
   color: #000;
+  margin-bottom: 20px;
 }
 
 .product__cataloge--oldprice {
@@ -406,12 +432,12 @@ a {
   text-align: center;
   color: #a9a9a9;
   text-decoration: line-through;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .product__cataloge--newprice {
   display: block;
-  width: 200px;
+  width: 120px;
   margin: 0 auto;
   font-family: Cuprum;
   font-size: 18px;
@@ -419,7 +445,9 @@ a {
   text-align: center;
   color: #fff;
   background: #ee3643;
-  margin-top: 20px;
+  padding: 13px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .companys__items {
@@ -590,6 +618,7 @@ a {
 .footer__bottom--social {
   display: flex;
   justify-content: flex-start;
+  text-indent: -9999px;
 }
 
 .vk {
