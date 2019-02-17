@@ -194,6 +194,7 @@
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <section class="footer__top">
       <div class="container">
@@ -236,6 +237,25 @@
           <p>
             Разработано — <a href="www.htmlacademy.ru">htmlacademy.ru</a>
           </p>
+        </div>
+        <!-- ПОПАП -->
+        <div class="contacts__popup visually-hidden">
+            <form action="#" method="post">
+              <button type="button" class="contacts__popup--close"></button>
+              <div class="contacts__popup--name">
+                <label for="popup_name">Ваше имя:</label>
+                <input type="text" name="popup_name" placeholder="Имя Фамилия" id="popup_name" required>
+              </div>
+              <div class="contacts__popup--email">
+                <label for="popup_email">Ваш email:</label>
+                <input type="email" name="popup_email" placeholder="email@example.com" id="popup_email" required>
+              </div>
+              <div class="contacts__popup--textarea">
+                <label for="popup_textarea">Текст письма:</label>
+                <input type="textarea" name="popup_textarea" placeholder="В свободной форме" id="popup_email" required>
+              </div>
+              <button type="submit">Отправить</button>
+            </form>
         </div>
       </div>
     </section>
