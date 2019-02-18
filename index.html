@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic|Bree+Serif">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -76,8 +75,8 @@
               <h2>ПЕРФОРАТОРЫ</h2>
               <p>Настоящие мужские игрушки</p>
             </div>
-            <a href="#" class="cataloge__slider--leftarrow"></a>
-            <a href="#" class="cataloge__slider--rightarrow"></a>
+            <a href="#" class="cataloge__slider--leftarrow">ЛЕВО</a>
+            <a href="#" class="cataloge__slider--rightarrow">ПРАВО</a>
             <a href="#" class="button">Открыть каталог</a>
           </div>
           <div class="cataloge__bottom-right">
@@ -100,24 +99,56 @@
         </div>
         <div class="product__cataloge">
           <div class="product__cataloge--item">
+            <div class="product__cataloge--item-buy product__cataloge--item-hidden">
+              <button class="button button__buy"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
+                  <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
+                Купить</button>
+              <button class="button button__bookmarks">В закладки</button>
+            </div>
             <img src="img/bfg-9000.png" alt="Перфоратор BOSCH BFG 9000" class="product__cataloge--bfg9000">
             <a href="#" class="product__cataloge--header">Перфоратор BOSCH BFG 9000</a>
             <p class="product__cataloge--oldprice">32500 Р.</p>
             <a href="#" class="product__cataloge--newprice">25500 Р.</a>
           </div>
           <div class="product__cataloge--item">
+            <div class="product__cataloge--item-buy product__cataloge--item-hidden">
+              <button class="button button__buy"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
+                  <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
+                Купить</button>
+              <button class="button button__bookmarks">В закладки</button>
+            </div>
             <img src="img/bfg-3000.png" alt="Перфоратор BOSCH BFG 3000" class="product__cataloge--bfg3000">
             <a href="#" class="product__cataloge--header">Перфоратор BOSCH BFG 3000</a>
             <p class="product__cataloge--oldprice">22500 Р.</p>
             <a href="#" class="product__cataloge--newprice">15500 Р.</a>
           </div>
           <div class="product__cataloge--item">
+            <div class="product__cataloge--item-buy product__cataloge--item-hidden">
+              <button class="button button__buy"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
+                  <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
+                Купить</button>
+              <button class="button button__bookmarks">В закладки</button>
+            </div>
             <img src="img/bfg-6000.png" alt="Перфоратор BOSCH BFG 6000" class="product__cataloge--bfg6000">
             <a href="#" class="product__cataloge--header">Перфоратор BOSCH BFG 6000</a>
             <p class="product__cataloge--oldprice">30500 Р.</p>
             <a href="#" class="product__cataloge--newprice">25500 Р.</a>
           </div>
           <div class="product__cataloge--item">
+            <div class="product__cataloge--item-buy product__cataloge--item-hidden">
+              <button class="button button__buy"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
+                  <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
+                Купить</button>
+              <button class="button button__bookmarks">В закладки</button>
+            </div>
             <img src="img/bfg-2000.png" alt="Перфоратор BOSCH BFG 2000" class="product__cataloge--bfg2000">
             <a href="#" class="product__cataloge--header">Перфоратор BOSCH BFG 2000</a>
             <p class="product__cataloge--oldprice visually-hidden ">30500 Р.</p>
@@ -195,8 +226,32 @@
         <div class="about__contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a target="_blank" href="https://yandex.co.il/maps/-/C8q65ls"><img class="about__contacts--map" src="img/map-small.jpg" alt="Карта" /></a>
+          <img class="about__contacts--map" src="img/map-small.jpg" alt="Карта" />
+          <!-- ПОПАП КАРТЫ -->
+          <div class="about__contacts--map--popup visually-hidden">
+            <button type="button" class="close">Закрыть</button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6126987618659!2d30.32054821615368!3d59.93856861906622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LMuINCh0LDQvdC60YItLdCf0LXRgtC10YDQsdGD0YDQsywg0YPQuy4g0JEuINCa0L7QvdGO0YjQtdC90L3QsNGPLCDQtC4gMTkvOA!5e0!3m2!1sen!2sil!4v1550479617411" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
           <a href="#" class="button">Заблудились? Напишите нам</a>
+          <!-- ПОПАП ОБРАТНОЙ СВЯЗИ-->
+          <div class="contacts__popup visually-hidden">
+              <form method="post" action="https://echo.htmlacademy.ru">
+                <button type="button" class="popup--close">Закрыть</button>
+                <div class="contacts__popup--name">
+                  <label for="popup_name">Ваше имя:</label>
+                  <input type="text" name="popup_name" placeholder="Имя Фамилия" id="popup_name" required>
+                </div>
+                <div class="contacts__popup--email">
+                  <label for="popup_email">Ваш email:</label>
+                  <input type="email" name="popup_email" placeholder="email@example.com" id="popup_email" required>
+                </div>
+                <div class="contacts__popup--textarea">
+                  <label for="popup_textarea">Текст письма:</label>
+                  <textarea name="popup_textarea" placeholder="В свободной форме" id="popup_textarea"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+              </form>
+          </div>
         </div>
       </div>
     </section>
@@ -246,25 +301,6 @@
           <p>
             Разработано — <a href="www.htmlacademy.ru">htmlacademy.ru</a>
           </p>
-        </div>
-        <!-- ПОПАП -->
-        <div class="contacts__popup visually-hidden">
-            <form action="#" method="post">
-              <button type="button" class="contacts__popup--close"></button>
-              <div class="contacts__popup--name">
-                <label for="popup_name">Ваше имя:</label>
-                <input type="text" name="popup_name" placeholder="Имя Фамилия" id="popup_name" required>
-              </div>
-              <div class="contacts__popup--email">
-                <label for="popup_email">Ваш email:</label>
-                <input type="email" name="popup_email" placeholder="email@example.com" id="popup_email" required>
-              </div>
-              <div class="contacts__popup--textarea">
-                <label for="popup_textarea">Текст письма:</label>
-                <textarea name="popup_textarea" placeholder="В свободной форме" id="popup_textarea"></textarea>
-              </div>
-              <button type="submit">Отправить</button>
-            </form>
         </div>
       </div>
     </section>

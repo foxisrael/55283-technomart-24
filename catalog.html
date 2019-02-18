@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic|Bree+Serif">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -82,12 +81,12 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="filter__range--toggle filter__range--min"></div>
-              <div class="filter__range--toggle filter__range--max"></div>
+              <div class="filter__range--toggle filter__range--min">От меньшего к большому</div>
+              <div class="filter__range--toggle filter__range--max">От большого к меньшему</div>
             </div>
             <div class="filter__range--data">
-              <label class="filter__range--min-data"><input type="text" name="min-price" placeholder="0"></label>
-              <label class="filter__range--max-data"><input type="text" name="max-price" placeholder="30000"></label>
+              <label class="filter__range--min-data"><input type="number" name="min-price" value="0"></label>
+              <label class="filter__range--max-data"><input type="number" name="max-price" value="30000"></label>
             </div>
           </div>
           <fieldset class="filter__companys">
@@ -95,22 +94,22 @@
             <ul>
               <li><input type="checkbox" class="filter__companys-input filter__companys-input-checkbox" name="Bosch" id="bosch" checked />
                 <label for="bosch">Вosch</label></li>
-              <li><input type="checkbox" class="filter__companys-input filter__companys-input-checkbox" name="Bosch" id="interskol" />
+              <li><input type="checkbox" class="filter__companys-input filter__companys-input-checkbox" name="interskol" id="interskol" />
                 <label for="interskol">ИНТЕРСКОЛ</label></li>
               <li><input type="checkbox" class="filter__companys-input filter__companys-input-checkbox" name="makita" id="makita" checked />
                 <label for="makita">MAKITA</label></li>
-              <li><input type="checkbox" class="filter__companys-input filter__companys-input-checkbox" name="Bosch" id="dewalt" />
+              <li><input type="checkbox" class="filter__companys-input filter__companys-input-checkbox" name="dewalt" id="dewalt" />
                 <label for="dewalt">DEWALT</label></li>
-              <li><input type="checkbox" class="filter__companys-input filter__companys-input-checkbox" name="Bosch" id="hitachi" />
+              <li><input type="checkbox" class="filter__companys-input filter__companys-input-checkbox" name="hitachi" id="hitachi" />
                 <label for="hitachi">HITACHI</label></li>
             </ul>
           </fieldset>
           <fieldset class="filter__power">
             <legend>Питание</legend>
             <ul>
-              <li><input type="radio" class="filter__power-input filter__power-input-radio" name="energy" value="battery" id="battery" checked />
+              <li><input type="radio" class="filter__power-input filter__power-input-radio" name="energy" value="АККУМУЛЯТОРНЫЕ" id="battery" checked />
                 <label for="battery">АККУМУЛЯТОРНЫЕ</label></li>
-              <li><input type="radio" class="filter__power-input filter__power-input-radio" name="energy" value="network" id="network" />
+              <li><input type="radio" class="filter__power-input filter__power-input-radio" name="energy" value="СЕТЕВЫЕ" id="network" />
                 <label for="network">СЕТЕВЫЕ</label></li>
             </ul>
           </fieldset>
@@ -257,7 +256,7 @@
               </div>
             </div>
             <ul class="product__pagination">
-              <li><a class="product__pagination__item product__pagination__item--active" href="#">1</a></li>
+              <li><a class="product__pagination__item product__pagination__item--active">1</a></li>
               <li><a class="product__pagination__item" href="#">2</a></li>
               <li><a class="product__pagination__item" href="#">3</a></li>
               <li><a class="product__pagination__item" href="#">Следующая</a></li>
@@ -265,7 +264,7 @@
           </div>
           <!-- ПОПАП -->
           <div class="product__popup visually-hidden">
-            <button type="button" class="contacts__popup--close"></button>
+            <button type="button" class="popup--close"></button>
             <div class="product__popup--header">
               <img src="img/form-1.svg" alt="Иконка ОК" />
               <p>Товар добавлен в корзину!</p>
@@ -340,5 +339,4 @@
     </section>
   </footer>
 </body>
-
 </html>

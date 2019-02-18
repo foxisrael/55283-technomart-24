@@ -828,6 +828,13 @@ a {
   text-indent: -9999px;
 }
 
+.filter__range--min,
+.filter__range--max,
+.cataloge__slider--leftarrow,
+.cataloge__slider--rightarrow{
+  text-indent: -9999px;
+}
+
 .vk {
   background-image: url("../img/icon-vk.svg");
   background-position: center;
@@ -994,7 +1001,7 @@ fieldset {
   justify-content: space-between;
 }
 
-.filter__range--data input[type="text"] {
+.filter__range--data input[type="number"] {
   background: #f7f3ec;
   border: 0;
   width: 100%;
