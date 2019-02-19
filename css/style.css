@@ -49,6 +49,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 .container {
@@ -88,11 +89,11 @@ a {
   background: #f4f7f9;
 }
 
-.header__top{
+.header__top {
   background: #293449;
 }
 
-.header__top .container{
+.header__top .container {
   height: 42px;
   display: flex;
   justify-content: space-between;
@@ -107,29 +108,46 @@ a {
   background: #ee3643;
 }
 
+.logo:hover{
+  background: #ca2c37;
+}
+
+.logo:active{
+  background: #ba2732;
+}
+
+
 .header__top__formfind {
-  margin-right: 75px;
-  margin-left: 20px;
-  padding-top: 10px;
+  width: 270px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .header__top__formfind input[type="text"] {
   position: relative;
   font-size: 17px;
-  line-height: 18px;
-  background: #293449;
+  background: none;
   border: none;
-  padding-left: 30px;
+  height: 40px;
+  padding-left: 50px;
+  outline: none;
+  width: 240px;
 }
 
-.header__top__formfind::before {
-  display: block;
-  content: "";
+.header__top__formfind:hover input[type="text"] {
+  background: #293449;
+}
+
+.header__top__formfind:active input[type="text"] {
+  background: #fff;
+  color: #000;
+}
+
+.icon-zoom{
   position: absolute;
-  background: url("../img/icon-search.svg");
-  width: 17px;
-  height: 17px;
-  z-index: 1;
+  top: 12px;
+  left: 20px;
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 .header__top__bookmarks,
@@ -267,16 +285,6 @@ a {
   padding: 5px;
 }
 
-/* .header__middle__login::before {
-  display: block;
-  content: "";
-  position: absolute;
-  background: url("../img/icon-login.svg") no-repeat;
-  width: 20px;
-  height: 17px;
-  top: 17px;
-  left: 10px;
-} */
 .header__nav {
   padding-bottom: 60px;
   background: #f4f7f9;
@@ -285,22 +293,29 @@ a {
 .header__nav ul {
   display: flex;
   justify-content: space-between;
+  padding: 0 30px;
   background: #32425c;
-  height: 55px;
   border-bottom: 5px solid #293449;
-  box-sizing: border-box;
-  padding: 15px 50px;
 }
 
-.header__nav li {
+.header__nav a{
+  display: block;
+  padding: 20px 30px;
+  background: #32425c;
+  color: #fff;
   text-align: center;
-}
-
-.header__nav a {
   font-family: Cuprum;
   font-size: 17px;
-  color: #fff;
   text-align: left;
+}
+
+.header__nav a:hover {
+  background: #1d2739;
+}
+
+.header__nav a:active {
+  background: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .main {
@@ -352,6 +367,15 @@ a {
   border-radius: 5px;
   box-sizing: border-box;
   margin: 0;
+  text-align: center;
+}
+
+.cataloge__item a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.cataloge__item a:active {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .material {
@@ -833,7 +857,7 @@ a {
 .filter__range__min,
 .filter__range__max,
 .cataloge__slider__leftarrow,
-.cataloge__slider__rightarrow{
+.cataloge__slider__rightarrow {
   text-indent: -9999px;
 }
 
