@@ -73,7 +73,6 @@ a {
   display: block;
   background: #ee3643;
   color: #fff;
-  width: 250px;
   box-sizing: border-box;
   text-transform: uppercase;
   font-size: 14px;
@@ -109,8 +108,8 @@ a {
 
 .logo {
   display: block;
-  height: 22px;
-  padding: 10px 50px;
+  height: 16px;
+  padding: 13px 54px;
   text-align: center;
   border-bottom: 5px solid #b52933;
   background: #ee3643;
@@ -136,7 +135,7 @@ a {
   background: none;
   border: none;
   height: 40px;
-  padding-left: 50px;
+  padding-left: 45px;
   outline: none;
   width: 240px;
 }
@@ -151,16 +150,19 @@ a {
   color: #000;
 }
 
-.icon-zoom {
-  position: absolute;
-  top: 12px;
-  left: 20px;
-}
-
 .icon-zoom,
 .icon-bookmarks,
 .icon-cart {
   fill: rgba(255, 255, 255, 0.5);
+  position: relative;
+  top: 0;
+  left: -10px;
+}
+
+.icon-zoom {
+  position: absolute;
+  top: 12px;
+  left: 16px;
 }
 
 .header__top__formfind:hover .icon-zoom {
@@ -182,7 +184,7 @@ a {
   color: #fff;
   width: 150px;
   text-align: center;
-  padding: 10px 15px;
+  padding: 10px 0;
 }
 
 .header__top__bookmarks:hover,
@@ -206,10 +208,6 @@ a {
   fill: rgba(255, 255, 255, 0.6);
 }
 
-.header__top__checkout {
-  padding-left: 10px;
-}
-
 .header__top__cart--active {
   background: #ee3643;
 }
@@ -230,7 +228,7 @@ a {
 /* HEADER MIDDLE */
 .header__middle {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 50px 0 40px 50px;
 }
 
@@ -242,13 +240,13 @@ a {
   line-height: 23px;
   font-family: Cuprum;
   width: 200px;
-  margin-right: 15px;
+  margin-right: 70px;
 }
 
 .header__middle__contacts {
   margin-top: -7px;
-  width: 280px;
-  margin-right: 15px;
+  width: 270px;
+  margin-right: 60px;
 }
 
 .header__middle__tel {
@@ -258,8 +256,7 @@ a {
   color: #ee3643;
   font-size: 21px;
   text-align: center;
-  padding: 10px 0;
-  left: 10px;
+  padding: 10px 0 10px 20px;
 }
 
 .header__middle__contacts a::before {
@@ -277,14 +274,13 @@ a {
   font-style: normal;
   font-family: Cuprum;
   text-align: center;
-  position: relative;
-  left: 10px;
 }
 
 .header__middle__registration {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  position: relative;
+  top: -5px;
 }
 
 .header__middle__login,
@@ -293,9 +289,8 @@ a {
   background: #fff;
   font-size: 21px;
   color: #000;
-  padding: 15px;
+  padding: 10px 25px;
   text-align: left;
-  box-sizing: border-box;
 }
 
 .header__middle__registration-top {
@@ -372,6 +367,9 @@ a {
 
 .icon-login {
   fill: #c5c5c5;
+  position: relative;
+  left: -8px;
+  top: 1px;
 }
 
 .icon-user {
@@ -401,7 +399,7 @@ a {
 
 .header__nav a {
   display: block;
-  padding: 20px 30px;
+  padding: 15px 23px;
   background: #32425c;
   color: #fff;
   text-align: center;
@@ -438,7 +436,7 @@ a {
 }
 
 .cataloge__item {
-  padding: 20px 30px 21px;
+  padding: 23px 23px 23px;
   box-sizing: border-box;
   width: 32%;
 }
@@ -452,7 +450,7 @@ a {
 }
 
 .cataloge__item h3 {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .cataloge__item a {
@@ -486,7 +484,7 @@ a {
 
 .tools {
   position: relative;
-  background: #3bbce3 url("../img/icon-tools.svg") no-repeat 204px 28px;
+  background: #3bbce3 url("../img/icon-tools.svg") no-repeat 197px 31px;
 }
 
 .technics {
@@ -496,25 +494,17 @@ a {
 
 .sale {
   position: relative;
-  background: #8ed78f url("../img/icon-sale.svg") no-repeat 200px 28px;
+  background: #8ed78f url("../img/icon-sale.svg") no-repeat 197px 27px;
   margin-bottom: 20px;
 }
 
 .delivery {
   position: relative;
-  background: #ffc047 url("../img/icon-delivery.svg") no-repeat 194px 28px;
+  background: #ffc047 url("../img/icon-delivery.svg") no-repeat 193px 29px;
 }
 
 .cataloge__slider {
   position: relative;
-  box-sizing: border-box;
-}
-
-.cataloge__slider .button {
-  display: block;
-  position: absolute;
-  bottom: 30px;
-  left: 25px;
 }
 
 .cataloge__slider__leftarrow,
@@ -528,13 +518,13 @@ a {
 
 .cataloge__slider__leftarrow {
   background: url("../img/icon-left.svg");
-  bottom: 100px;
+  bottom: 112px;
   left: 25px;
 }
 
 .cataloge__slider__rightarrow {
   background: url("../img/icon-right.svg");
-  bottom: 100px;
+  bottom: 112px;
   right: 25px;
 }
 
@@ -542,7 +532,6 @@ a {
   font-family: cuprum;
   font-size: 36px;
   color: #fff;
-  margin-bottom: 10px;
 }
 
 .cataloge__slider p {
@@ -554,8 +543,8 @@ a {
 .cataloge__slider-1,
 .cataloge__slider-2 {
   width: 620px;
-  height: 265px;
-  padding: 25px 0 0 25px;
+  height: 266px;
+  padding: 20px 0 0 25px;
   box-sizing: border-box;
 }
 
@@ -566,6 +555,13 @@ a {
 .cataloge__slider-2 {
   display: none;
   background: url("../img/slider-2.jpg") no-repeat;
+}
+
+.button-slider {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  padding: 8px 50px;
 }
 
 .product__cataloge,
@@ -1264,13 +1260,13 @@ fieldset {
 }
 
 .filter__form input[type="checkbox"],
-.filter__form input[type="radio"]{
+.filter__form input[type="radio"] {
   display: none;
   position: relative;
 }
 
 .filter__companys label,
-.filter__power label{
+.filter__power label {
   display: block;
   position: relative;
   font-family: "pt sans";
@@ -1280,7 +1276,7 @@ fieldset {
   cursor: pointer;
 }
 
-.filter__companys-input-checkbox+label::before{
+.filter__companys-input-checkbox+label::before {
   display: block;
   content: "";
   position: absolute;
@@ -1291,7 +1287,7 @@ fieldset {
   left: 0;
 }
 
-.filter__companys-input-checkbox--active+label::before{
+.filter__companys-input-checkbox--active+label::before {
   display: block;
   content: "";
   position: absolute;
@@ -1302,7 +1298,7 @@ fieldset {
   left: 0;
 }
 
-.filter__companys-input-checkbox:active+label::before{
+.filter__companys-input-checkbox:active+label::before {
   display: block;
   content: "";
   position: absolute;
@@ -1313,7 +1309,7 @@ fieldset {
   left: 0;
 }
 
-.filter__power-input-radio+label::before{
+.filter__power-input-radio+label::before {
   display: block;
   content: "";
   position: absolute;
@@ -1324,7 +1320,7 @@ fieldset {
   left: 0;
 }
 
-.filter__power-input-radio--active+label::before{
+.filter__power-input-radio--active+label::before {
   display: block;
   content: "";
   position: absolute;
@@ -1335,7 +1331,7 @@ fieldset {
   left: 0;
 }
 
-.filter__power-input-radio:active+label::before{
+.filter__power-input-radio:active+label::before {
   display: block;
   content: "";
   position: absolute;
