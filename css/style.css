@@ -58,8 +58,7 @@ a {
   box-sizing: border-box;
 }
 
-.visually-hidden,
-.product__cataloge__item-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -81,6 +80,7 @@ a {
   text-align: center;
   padding: 8px;
   border-radius: 5px;
+  outline: none;
 }
 
 .button:hover {
@@ -242,13 +242,13 @@ a {
   line-height: 23px;
   font-family: Cuprum;
   width: 200px;
-  margin-right: 85px;
+  margin-right: 15px;
 }
 
 .header__middle__contacts {
   margin-top: -7px;
   width: 280px;
-  margin-right: 65px;
+  margin-right: 15px;
 }
 
 .header__middle__tel {
@@ -287,13 +287,8 @@ a {
   margin: 0;
 }
 
-.header__middle__registration-intro {
-  display: block;
-}
-
 .header__middle__login,
-.header__middle__logup,
-.header__middle__name {
+.header__middle__logup {
   display: block;
   background: #fff;
   font-size: 21px;
@@ -303,8 +298,61 @@ a {
   box-sizing: border-box;
 }
 
-.header__middle__menu {
-  display: block;
+.header__middle__registration-top {
+  background: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.header__middle__registration-intro a {
+  font-size: 21px;
+  color: #000;
+}
+
+.header__middle__registration-top:active a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.header__middle__registration-top:hover .icon-user,
+.header__middle__registration-top:hover .icon-login {
+  fill: #32425c;
+}
+
+.header__middle__registration-top:active .icon-user,
+.header__middle__registration-top:active .icon-login {
+  fill: #c5c5c5;
+}
+
+.header__middle__registration-bottom {
+  text-align: center;
+  background: none;
+}
+
+.header__middle__registration-bottom a {
+  font-family: cuprum;
+  font-size: 16px;
+  color: #32425c;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.header__middle__registration-bottom a:hover {
+  color: #ee3643;
+}
+
+.header__middle__registration-bottom a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header__middle__registration-bottom span {
+  display: inline-block;
+  position: relative;
+  width: 4px;
+  height: 4px;
+  background: #32425c;
+  border-radius: 50%;
+  top: -4px;
+  margin: 0 5px;
 }
 
 .header__middle__login {
@@ -312,8 +360,30 @@ a {
   box-sizing: border-box;
 }
 
-.header__middle__name {
-  padding: 5px;
+.header__middle__login:hover,
+.header__middle__logup:hover {
+  color: #ee3643;
+}
+
+.header__middle__login:active,
+.header__middle__logup:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.icon-login {
+  fill: #c5c5c5;
+}
+
+.icon-user {
+  fill: #c5c5c5;
+}
+
+.header__middle__login:hover .icon-login {
+  fill: #32425c;
+}
+
+.header__middle__login:active .icon-login {
+  fill: #c5c5c5;
 }
 
 .header__nav {
@@ -498,11 +568,13 @@ a {
   background: url("../img/slider-2.jpg") no-repeat;
 }
 
-.product__cataloge {
+.product__cataloge,
+.product__cataloge--inside {
   display: flex;
   justify-content: space-between;
   position: relative;
   flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 .product__cataloge__item {
@@ -514,7 +586,7 @@ a {
   width: 23%;
 }
 
-.product__cataloge__item-buy{
+.product__cataloge__item-buy {
   position: absolute;
   width: 100%;
   padding: 45px 40px 30px;
@@ -524,11 +596,22 @@ a {
   left: 0;
 }
 
-.product__cataloge__item:hover {
-  box-shadow: 
+.product__cataloge__item-buy--hidden {
+  display: none;
 }
 
-.product__cataloge__item-catalog {
+.product__cataloge__item:hover,
+.product__cataloge__item--inside:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.product__cataloge__item:hover .product__cataloge__item-buy--hidden,
+.product__cataloge__item--inside:hover .product__cataloge__item-buy--hidden {
+  display: block;
+  z-index: 1;
+}
+
+.product__cataloge__item--inside {
   text-align: center;
   position: relative;
   border: 1px solid #eaeaea;
@@ -559,6 +642,39 @@ a {
   color: #000;
 }
 
+.button__buy:hover {
+  background: #5fbb2d;
+  border: 3px solid #5fbb2d;
+  border-bottom: 3px solid #63a63e;
+}
+
+.button__buy:active {
+  background: #518534;
+  border: 3px solid #518534;
+}
+
+.button__bookmarks:hover {
+  background: #fff;
+  border: 3px solid #32425c;
+}
+
+.button__bookmarks:active {
+  border: 3px solid rgba(50, 60, 92, 0.3);
+  color: rgba(50, 60, 92, 0.3);
+}
+
+.icon-busket {
+  position: relative;
+  top: 0;
+  left: -25px;
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.button__buy:hover .icon-busket,
+.button__buy:active .icon-busket {
+  fill: rgba(255, 255, 255, 1);
+}
+
 .bfg2000-flag,
 .bfg3000-flag,
 .bfg6000-flag,
@@ -571,6 +687,7 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 1;
 }
 
 .product__header,
@@ -643,6 +760,14 @@ a {
   border: 1px solid #e5e5e5;
   margin-right: 10px;
   color: #000;
+}
+
+.product__pagination__item:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.product__pagination__item:active {
+  border: 1px solid #ee3643;
 }
 
 .product__pagination__item--active {
@@ -990,6 +1115,7 @@ a {
   padding: 33px 0 33px 30px;
   background: #f2f6f8;
   color: #32425c;
+  margin-top: 20px;
 }
 
 .breadcrumbs li,
@@ -1135,4 +1261,87 @@ fieldset {
 .main_about h2 {
   margin-bottom: 40px;
   color: #000;
+}
+
+.filter__form input[type="checkbox"],
+.filter__form input[type="radio"]{
+  display: none;
+  position: relative;
+}
+
+.filter__companys label,
+.filter__power label{
+  display: block;
+  position: relative;
+  font-family: "pt sans";
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 10px 35px;
+  cursor: pointer;
+}
+
+.filter__companys-input-checkbox+label::before{
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-off.svg") no-repeat;
+  width: 27px;
+  height: 23px;
+  top: 10px;
+  left: 0;
+}
+
+.filter__companys-input-checkbox--active+label::before{
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-on.svg") no-repeat;
+  width: 27px;
+  height: 23px;
+  top: 10px;
+  left: 0;
+}
+
+.filter__companys-input-checkbox:active+label::before{
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-on.svg") no-repeat;
+  width: 27px;
+  height: 23px;
+  top: 10px;
+  left: 0;
+}
+
+.filter__power-input-radio+label::before{
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/radio-off.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  left: 0;
+}
+
+.filter__power-input-radio--active+label::before{
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/radio-on.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  left: 0;
+}
+
+.filter__power-input-radio:active+label::before{
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/radio-on.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  left: 0;
 }
