@@ -1,7 +1,7 @@
 html, body {
   margin: 0 auto;
   padding: 0;
-  font-family: Cuprum, sans-serif;
+  font-family: Cuprum;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -117,10 +117,12 @@ a {
 
 .logo:hover {
   background: #ca2c37;
+  border-bottom: 5px solid #9a212a;
 }
 
 .logo:active {
   background: #ba2732;
+  border-bottom: 5px solid #8e1e26;
 }
 
 .header__top__formfind {
@@ -1298,7 +1300,7 @@ fieldset {
   left: 0;
 }
 
-.filter__companys-input-checkbox:active+label::before {
+.filter__companys-input-checkbox:checked+label::before {
   display: block;
   content: "";
   position: absolute;
@@ -1331,7 +1333,7 @@ fieldset {
   left: 0;
 }
 
-.filter__power-input-radio:active+label::before {
+.filter__power-input-radio:checked+label::before {
   display: block;
   content: "";
   position: absolute;
