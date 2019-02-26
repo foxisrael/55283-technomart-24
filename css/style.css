@@ -1,42 +1,15 @@
 html, body {
   margin: 0 auto;
   padding: 0;
-  font-family: Cuprum;
+  font-family: Cuprum, "pt sans";
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
   box-sizing: border-box;
 }
 
-/* ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-} */
-h1 {
-  font-family: Cuprum;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-family: Cuprum;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 40px;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-family: Cuprum;
-  font-weight: bold;
-  font-size: 24px;
-  color: #FFF;
-}
-
 p {
-  font-family: "Pt Sans";
-  font-weight: normal;
+  font-family: "pt sans";
   font-size: 13px;
   line-height: 24px;
 }
@@ -174,8 +147,6 @@ a {
 .header__top__bookmarks,
 .header__top__cart,
 .header__top__checkout {
-  display: block;
-  font-family: Cuprum;
   font-size: 17px;
   color: #fff;
   width: 150px;
@@ -230,12 +201,12 @@ a {
 
 .header__middle__about {
   display: block;
-  color: #ee3643;
+  width: 200px;
+  font-family: Cuprum;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
-  font-family: Cuprum;
-  width: 200px;
+  color: #ee3643;
   margin: 0;
 }
 
@@ -267,7 +238,6 @@ a {
 .header__middle__contacts address {
   font-size: 14px;
   font-style: normal;
-  font-family: Cuprum;
   text-align: center;
 }
 
@@ -406,7 +376,6 @@ a {
   background: #32425c;
   color: #fff;
   text-align: center;
-  font-family: Cuprum;
   font-size: 17px;
   text-align: left;
 }
@@ -420,13 +389,12 @@ a {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* MAIN */
 .main {
   padding: 60px 0 85px;
 }
 
-.main__inside {
-  padding: 25px 0 0;
-}
+/* CATALOGE */
 
 .cataloge__top,
 .cataloge__bottom {
@@ -445,6 +413,9 @@ a {
 }
 
 .cataloge__item h3 {
+  font-family: Cuprum;
+  font-size: 24px;
+  color: #fff;
   margin: 0 0 20px 0;
 }
 
@@ -454,7 +425,6 @@ a {
 
 .cataloge__bottom-right .cataloge__item {
   width: 100%;
-  box-sizing: border-box;
 }
 
 .cataloge__item a {
@@ -462,14 +432,12 @@ a {
   width: 135px;
   height: 38px;
   background: rgba(0, 0, 0, 0.1);
-  font-family: Cuprum;
   font-size: 14px;
   text-transform: uppercase;
   color: white;
   padding: 7px 20px;
   border-radius: 5px;
   box-sizing: border-box;
-  margin: 0;
   text-align: center;
 }
 
@@ -511,9 +479,11 @@ a {
   position: relative;
 }
 
-.cataloge__slider h2,
-.cataloge__slider p {
-  margin: 0;
+.cataloge__slider h2{
+  font-family: cuprum;
+  font-size: 36px;
+  color: #fff;
+  margin: 0 0 15px;
 }
 
 .cataloge__slider__leftarrow,
@@ -537,16 +507,11 @@ a {
   right: 25px;
 }
 
-.cataloge__slider h2 {
-  font-family: cuprum;
-  font-size: 36px;
-  color: #fff;
-}
-
 .cataloge__slider p {
   font-family: cuprum;
   font-size: 18px;
   color: #fff;
+  margin: 0;
 }
 
 .cataloge__slider-1,
@@ -562,8 +527,11 @@ a {
 }
 
 .cataloge__slider-2 {
-  display: none;
   background: url("../img/slider-2.jpg") no-repeat;
+}
+
+.cataloge__slider-2--hidden{
+  display: none;
 }
 
 .button-slider {
@@ -572,6 +540,8 @@ a {
   left: 25px;
   padding: 8px 50px;
 }
+
+/* PRODUCT */
 
 .product__cataloge,
 .product__cataloge--inside {
@@ -699,8 +669,9 @@ a {
 .companys__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #f9f5f0;
-  padding: 25px 25px 20px 30px;
+  padding: 30px 25px;
 }
 
 .product__header h2,
@@ -708,6 +679,7 @@ a {
   margin: 0;
   font-weight: normal;
   font-size: 30px;
+  text-transform: uppercase;
 }
 
 .product__button {
@@ -773,11 +745,11 @@ a {
   background: #ba2732;
 }
 
-.product__cataloge__newprice:hover .product__cataloge__newprice::after {
+.product__cataloge__newprice:hover::after {
   border-left: 20px solid #ca2c37;
 }
 
-.product__cataloge__newprice:active .product__cataloge__newprice::after {
+.product__cataloge__newprice:active::afterx {
   border-left: 20px solid #ba2732;
 }
 
@@ -877,6 +849,11 @@ a {
   font-weight: normal;
   color: #000;
   margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.service__header p{
+  color: #000;
 }
 
 .service__features {
@@ -940,7 +917,11 @@ a {
 }
 
 .service__content__delivery h2 {
-  margin: 0;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+  font-weight: normal;
+  color: #32425c;
+  font-size: 36px;
 }
 
 .service__content__delivery {
@@ -960,6 +941,7 @@ a {
 
 .service__content p {
   width: 300px;
+  color: #000;
 }
 
 .about .container {
@@ -969,7 +951,10 @@ a {
 }
 
 .about h2 {
+  font-size: 30px;
   color: #000;
+  text-transform: uppercase;
+  font-weight: normal;
   margin-bottom: 40px;
 }
 
@@ -981,6 +966,10 @@ a {
 
 .about__company p {
   width: 525px;
+}
+
+.about__company ul{
+  padding: 0;
 }
 
 .about__company li {
@@ -1012,6 +1001,12 @@ a {
   width: 300px;
   height: 158px;
   margin-bottom: 50px;
+}
+
+.about__button,
+.map__button{
+  padding: 8px 40px;
+  width: 300px;
 }
 
 /* FOOTER */
@@ -1172,6 +1167,7 @@ a {
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
+  padding: 0;
 }
 
 .breadcrumbs h2 {
@@ -1179,6 +1175,9 @@ a {
   background: #f2f6f8;
   color: #32425c;
   margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: normal;
 }
 
 .breadcrumbs li,
@@ -1268,9 +1267,9 @@ a {
   fill: #ee3643;
 }
 
-
 .filter__form span {
   display: block;
+  font-family: "pt sans";
   background: #f7f3ec;
   padding: 10px 20px;
   font-size: 13px;
@@ -1284,11 +1283,14 @@ a {
 
 .filter h3,
 legend {
+  display: block;
   text-transform: uppercase;
   font-size: 17px;
   font-weight: bold;
   color: #000;
   border: 0;
+  padding: 15px 0;
+  margin: 0;
 }
 
 fieldset {
@@ -1299,6 +1301,7 @@ fieldset {
 
 .filter__range__controls {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .scale {
@@ -1324,6 +1327,12 @@ fieldset {
   right: 0;
   width: 29px;
   height: 2px;
+}
+
+.filter__range,
+.filter__companys{
+  padding-bottom: 25px;
+  border-bottom: 1px solid #f7f3ec;
 }
 
 .filter__range__toggle {
@@ -1357,7 +1366,7 @@ fieldset {
 .filter__range__data input[type="number"] {
   background: #f7f3ec;
   border: 0;
-  width: 100%;
+  width: 94px;
   padding: 12px 0;
   text-align: center;
 }
@@ -1400,7 +1409,7 @@ fieldset {
   display: block;
   content: "";
   position: absolute;
-  background: url("../img/icon-checkbox-off.svg") no-repeat;
+  background: url("../img/checkbox-off.svg") no-repeat;
   width: 27px;
   height: 23px;
   top: 10px;
@@ -1411,7 +1420,7 @@ fieldset {
   display: block;
   content: "";
   position: absolute;
-  background: url("../img/icon-checkbox-on.svg") no-repeat;
+  background: url("../img/checkbox-on.svg") no-repeat;
   width: 27px;
   height: 23px;
   top: 10px;
@@ -1422,7 +1431,7 @@ fieldset {
   display: block;
   content: "";
   position: absolute;
-  background: url("../img/icon-checkbox-on.svg") no-repeat;
+  background: url("../img/checkbox-on.svg") no-repeat;
   width: 27px;
   height: 23px;
   top: 10px;
@@ -1433,7 +1442,7 @@ fieldset {
   display: block;
   content: "";
   position: absolute;
-  background: url("../img/icon-radio-off.svg") no-repeat;
+  background: url("../img/radio-off.svg") no-repeat;
   width: 25px;
   height: 25px;
   top: 10px;
@@ -1444,7 +1453,7 @@ fieldset {
   display: block;
   content: "";
   position: absolute;
-  background: url("../img/icon-radio-on.svg") no-repeat;
+  background: url("../img/radio-on.svg") no-repeat;
   width: 25px;
   height: 25px;
   top: 10px;
@@ -1455,9 +1464,17 @@ fieldset {
   display: block;
   content: "";
   position: absolute;
-  background: url("../img/icon-radio-on.svg") no-repeat;
+  background: url("../img/radio-on.svg") no-repeat;
   width: 25px;
   height: 25px;
   top: 10px;
   left: 0;
+}
+
+.submit-button{
+  display: block;
+  background: #fff;
+  color: #000;
+  outline: none;
+  padding: 14px 40px
 }
