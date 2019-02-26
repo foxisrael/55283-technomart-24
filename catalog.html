@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7cPT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" >
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7cPT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -50,8 +50,7 @@
               <svg class="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                 <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" />
               </svg>
-              Равшан Джамшутович</a>
-            <a href="#">
+              Равшан Джамшутович
               <svg class="icon-login" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
                 <path d="M14.875 8.5L6 0v6H0v5h6v6z" />
                 <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
@@ -59,7 +58,7 @@
             </a>
           </div>
           <div class="header__middle__registration-bottom">
-            <p><a href="#">Мои заказы</a> <span></span> <a href="#">Личный кабинет</a></p>
+            <a href="#">Мои заказы</a> <span></span> <a href="#">Личный кабинет</a></p>
           </div>
         </div>
       </section>
@@ -146,11 +145,21 @@
         <div class="filter__products">
           <ul class="filter__products__line">
             <li>Сортировка</li>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По функционалу</a></li>
-            <li><a href="#" class="filter__products__lineup"><img src="img/icon-up-dir.svg" alt="Иконка сортировка вверх" /></a></li>
-            <li><a href="#" class="filter__products__linedown"><img src="img/icon-down-dir.svg" alt="Иконка сортировка вниз" /></a></li>
+            <li><a href="#" class="filter__products__price filter__products__price--active">По цене</a></li>
+            <li><a href="#" class="filter__products__type">По типу</a></li>
+            <li><a href="#" class="filter__products__function">По функционалу</a></li>
+            <li><a href="#" class="filter__products__lineup filter__products__lineup--active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path d="M5.5 0L0 10h11z" />
+                </svg>
+              </a></li>
+            <li>
+              <a href="#" class="filter__products__linedown">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path d="M5.5 10L0 0h11" />
+                </svg>
+              </a>
+            </li>
           </ul>
           <div class="product">
             <div class="product__cataloge--inside">
@@ -189,7 +198,7 @@
                 <a href="#" class="product__cataloge__newprice">25500 Р.</a>
               </div>
               <div class="product__cataloge__item--inside">
-                <div class="product__cataloge__item-buy ">
+                <div class="product__cataloge__item-buy product__cataloge__item-buy--hidden">
                   <button class="button button__buy">
                     <svg class="icon-busket" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                       <circle cx="4.5" cy="13.5" r="1.5" />
@@ -200,10 +209,10 @@
                   </button>
                   <button class="button button__bookmarks">В закладки</button>
                 </div>
+                <img src="img/bfg-2000.png" alt="Перфоратор BOSCH BFG 2000" class="product__cataloge__bfg2000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 2000</a>
                 <p class="product__cataloge__oldprice visually-hidden ">30500 Р.</p>
                 <a href="#" class="product__cataloge__newprice">15500 Р.</a>
-                <img class="bfg-flag" src="img/flag-new.png" alt="new" width="60" height="59" />
               </div>
               <div class="product__cataloge__item--inside">
                 <div class="product__cataloge__item-buy product__cataloge__item-buy--hidden">
