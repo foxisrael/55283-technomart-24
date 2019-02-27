@@ -262,34 +262,44 @@
 
           <!-- ПОПАП КАРТЫ -->
           <div class="about__contacts__map__popup visually-hidden">
-            <button type="button" class="close">Закрыть</button>
+            <a href="#" class="popup__close">
+              <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" />
+              </svg>
+            </a>
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6126987618659!2d30.32054821615368!3d59.93856861906622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LMuINCh0LDQvdC60YItLdCf0LXRgtC10YDQsdGD0YDQsywg0YPQuy4g0JEuINCa0L7QvdGO0YjQtdC90L3QsNGPLCDQtC4gMTkvOA!5e0!3m2!1sen!2sil!4v1550479617411"
               width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
           <a href="#" class="button map__button">Заблудились? Напишите нам</a>
-
-          <!-- ПОПАП ОБРАТНОЙ СВЯЗИ -->
-          <div class="contacts__popup visually-hidden">
-            <form method="post" action="https://echo.htmlacademy.ru">
-              <button type="button" class="popup__close">Закрыть</button>
-              <div class="contacts__popup__name">
-                <label for="popup_name">Ваше имя:</label>
-                <input type="text" name="popup_name" placeholder="Имя Фамилия" id="popup_name" required>
-              </div>
-              <div class="contacts__popup__email">
-                <label for="popup_email">Ваш email:</label>
-                <input type="email" name="popup_email" placeholder="email@example.com" id="popup_email" required>
-              </div>
-              <div class="contacts__popup__textarea">
-                <label for="popup_textarea">Текст письма:</label>
-                <textarea name="popup_textarea" placeholder="В свободной форме" id="popup_textarea"></textarea>
-              </div>
-              <button type="submit">Отправить</button>
-            </form>
-          </div>
         </div>
       </div>
     </section>
+
+    <!-- ПОПАП ОБРАТНОЙ СВЯЗИ -->
+    <div class="contacts__popup visually-hidden">
+      <a href="#" class="popup__close">
+        <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+          <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" />
+        </svg>
+      </a>
+      <form method="post" action="https://echo.htmlacademy.ru">
+        <div class="contacts__popup__name">
+          <label for="popup_name">Ваше имя:</label>
+          <input type="text" name="popup_name" placeholder="Имя Фамилия" id="popup_name" required>
+        </div>
+        <div class="contacts__popup__email">
+          <label for="popup_email">Ваш email:</label>
+          <input type="email" name="popup_email" placeholder="email@example.com" id="popup_email" required>
+        </div>
+        <div class="contacts__popup__textarea">
+          <label for="popup_textarea">Текст письма:</label>
+          <textarea name="popup_textarea" placeholder="В свободной форме" id="popup_textarea"></textarea>
+        </div>
+      </form>
+      <div class="contacts__popup__sendbutton">
+        <a href="" class="button">Отправить</a>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
