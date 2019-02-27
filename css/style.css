@@ -1392,7 +1392,10 @@ fieldset {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: normal;
+}
 
+.main_about p{
+  color: #000;
 }
 
 .filter__form input[type="checkbox"],
