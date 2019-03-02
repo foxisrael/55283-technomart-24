@@ -92,7 +92,7 @@ body {
   background: none;
   border: none;
   height: 40px;
-  padding-left: 45px;
+  padding-left: 48px;
   outline: none;
   width: 240px;
   color: inherit;
@@ -245,7 +245,7 @@ body {
   color: #ee3643;
   font-size: 21px;
   text-align: center;
-  padding: 10px 0 10px 30px;
+  padding: 10px 0 10px 25px;
   text-decoration: none;
 }
 
@@ -389,16 +389,17 @@ body {
 
 .header__nav ul {
   display: flex;
-  justify-content: space-between;
-  padding: 0 30px;
+  justify-content: flex-start;
+  padding: 0 21px;
   margin: 0;
   background: #32425c;
   border-bottom: 5px solid #293449;
+  list-style-type: none;
 }
 
 .header__nav a {
   display: block;
-  padding: 15px 23px;
+  padding: 15px 30px;
   background: #32425c;
   color: #fff;
   text-align: center;
@@ -436,7 +437,7 @@ body {
 }
 
 .cataloge__item {
-  padding: 20px 25px 20px;
+  padding: 22px 22px 21px;
   box-sizing: border-box;
   width: 32%;
 }
@@ -445,7 +446,7 @@ body {
   font-family: Cuprum;
   font-size: 24px;
   color: #fff;
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
 }
 
 .cataloge__bottom-right {
@@ -502,7 +503,7 @@ body {
 
 .delivery {
   position: relative;
-  background: #ffc047 url("../img/icon-delivery.svg") no-repeat 193px 29px;
+  background: #ffc047 url("../img/icon-delivery.svg") no-repeat 191px 31px;
 }
 
 .cataloge__slider {
@@ -513,7 +514,7 @@ body {
   font-family: cuprum;
   font-size: 36px;
   color: #fff;
-  margin: 0 0 15px;
+  margin: 0 0 8px;
 }
 
 .cataloge__slider__leftarrow,
@@ -532,7 +533,17 @@ body {
 .cataloge__slider__rightarrow {
   fill: #fff;
   bottom: 112px;
-  right: 25px;
+  right: 23px;
+}
+
+.cataloge__slider__leftarrow:hover,
+.cataloge__slider__rightarrow:hover {
+  fill: #ca2c37;
+}
+
+.cataloge__slider__leftarrow:active,
+.cataloge__slider__rightarrow:active {
+  fill: #ba2732;
 }
 
 .cataloge__slider p {
@@ -546,7 +557,7 @@ body {
 .cataloge__slider-2 {
   width: 620px;
   height: 266px;
-  padding: 20px 0 0 25px;
+  padding: 29px 0 0 25px;
   box-sizing: border-box;
 }
 
@@ -558,14 +569,14 @@ body {
   background: url("../img/slider-2.jpg") no-repeat;
 }
 
-.cataloge__slider-2--hidden {
+.cataloge__slider--hidden {
   display: none;
 }
 
 .button-slider {
   position: absolute;
   bottom: 20px;
-  left: 25px;
+  left: 22px;
   padding: 8px 50px;
 }
 
@@ -584,7 +595,7 @@ body {
   position: relative;
   border: 1px solid #eaeaea;
   box-sizing: border-box;
-  padding: 35px 20px 40px;
+  padding: 35px 0 40px;
   width: calc(25% - 14px);
 }
 
@@ -628,7 +639,7 @@ body {
 .product__cataloge__bfg3000,
 .product__cataloge__bfg6000,
 .product__cataloge__bfg9000 {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .button__buy,
@@ -698,7 +709,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #f9f5f0;
-  padding: 30px 25px;
+  padding: 25px 25px;
 }
 
 .product__header h2,
@@ -710,7 +721,7 @@ body {
 }
 
 .product__button {
-  padding: 8px 53px;
+  padding: 8px 56px;
 }
 
 .product__cataloge {
@@ -724,6 +735,7 @@ body {
   line-height: 20px;
   font-weight: bold;
   text-align: center;
+  padding: 0 20px;
   color: #000;
   margin-bottom: 5px;
   text-decoration: none;
@@ -824,7 +836,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 15px 0 50px;
+  padding: 10px 0 50px;
 }
 
 .companys__item {
@@ -860,13 +872,13 @@ body {
 }
 
 .companys__button {
-  padding: 8px 67px;
+  padding: 8px 70px;
 }
 
 .service {
   background: #f4f8fa;
   box-sizing: border-box;
-  padding: 30px 0 20px;
+  padding: 40px 0 20px;
 }
 
 .service__header {
@@ -879,7 +891,7 @@ body {
   font-size: 30px;
   font-weight: normal;
   color: #000;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
@@ -943,6 +955,11 @@ body {
   color: #32425c;
 }
 
+.service__features__delivery-active:hover {
+  background: #fff;
+  color: #32425c;
+}
+
 .service__content {
   padding-left: 80px;
   width: 100%
@@ -950,7 +967,7 @@ body {
 
 .service__content__delivery h2 {
   text-transform: uppercase;
-  margin: 0 0 40px;
+  margin: 5px 0 30px;
   font-weight: normal;
   color: #32425c;
   font-size: 36px;
@@ -958,6 +975,7 @@ body {
 
 .service__content__delivery {
   background: url("../img/delivery.png") no-repeat top right;
+  background-position: 150px 20px;
   height: 240px;
 }
 
@@ -972,14 +990,14 @@ body {
 }
 
 .service__content p {
-  width: 300px;
+  width: 260px;
   color: #000;
 }
 
 .about .container {
   display: flex;
-  justify-content: space-between;
-  padding: 80px 0 0;
+  justify-content: flex-start;
+  padding: 75px 0 88px;
 }
 
 .about h2 {
@@ -987,21 +1005,31 @@ body {
   color: #000;
   text-transform: uppercase;
   font-weight: normal;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .about p {
-  margin-bottom: 30px;
   font-family: "pt sans";
   font-size: 13px;
 }
 
-.about__company p {
+.about__company{
+  margin-right: 110px;
+}
+
+.about__company_p1 {
   width: 525px;
+  margin-bottom: 25px;
+}
+
+.about__company_p2 {
+  width: 435px;
+  margin-bottom: 18px;
 }
 
 .about__company ul {
   padding: 0;
+  margin-bottom: 32px;
 }
 
 .about__company li {
@@ -1011,7 +1039,7 @@ body {
   font-size: 18px;
   color: #000;
   margin-left: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .about__company li::before {
@@ -1025,21 +1053,22 @@ body {
   background: #ee3643;
 }
 
-.about__contacts {
-  padding-bottom: 85px;
-}
-
 .about__contacts p {
   width: 180px;
+  margin-bottom: 30px;
 }
 
 .about__contacts__map {
   width: 300px;
   height: 158px;
-  margin-bottom: 50px;
+  margin-bottom: 33px;
 }
 
-.about__button,
+.about__button{
+  padding: 8px 40px;
+  width: 220px;
+}
+
 .map__button {
   padding: 8px 40px;
   width: 300px;
@@ -1052,15 +1081,21 @@ body {
 
 .footer__top .container {
   display: flex;
-  justify-content: space-between;
-}
-
-.footer__contacts {
-  width: 220px;
+  justify-content: flex-start;
 }
 
 .logo__footer {
+  width: 220px;
+  padding: 21px 0 26px;
   margin-bottom: 30px;
+}
+
+.footer__top__contacts{
+  width: 325px;
+}
+
+.footer__contacts{
+  margin-right: 33px;
 }
 
 .footer__top__contacts a,
@@ -1073,15 +1108,19 @@ body {
 }
 
 .footer__nav {
-  padding-bottom: 40px;
+  padding-bottom: 43px;
 }
 
 .footer__nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 55px;
   width: 550px;
   margin: 40px 0 0;
+}
+
+.footer__nav li{
+  margin-right: 60px;
 }
 
 .footer__nav ul:last-child {
@@ -1122,14 +1161,20 @@ body {
 
 .footer__bottom .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   background: #293449;
   color: #fff;
-  padding: 30px 0 20px;
+  padding: 35px 0 35px;
 }
 
-.footer__bottom__copyright {
-  width: 230px;
+.footer__bottom__copyright{
+  width: 350px;
+  margin: 0 150px 0 0;
+}
+
+.footer__bottom__copyright p {
+  font-size: 16px;
+  margin: 0 0 -8px;
 }
 
 .social__button {
@@ -1145,6 +1190,12 @@ body {
   justify-content: flex-start;
   text-indent: -9999px;
   list-style-type: none;
+  margin: 0 115px 0 0;
+  padding: 0;
+}
+
+.footer__bottom__social li{
+  margin-right: 5px;
 }
 
 .filter__range__min,
@@ -1181,9 +1232,11 @@ body {
   background-color: #ee3643;
 }
 
-.footer__bottom__mail p {
-  display: inline-block;
-  width: 140px;
+.footer__bottom__mail {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__bottom__mail a {
@@ -1197,6 +1250,11 @@ body {
 .footer__bottom__mail a:active {
   text-decoration: none;
   color: #ee3643;
+}
+
+.footer__bottom__mail_p1{
+  display: block;
+  margin-right: 20px;
 }
 
 /* CATALOH.HTML */
@@ -1460,7 +1518,35 @@ fieldset {
   height: 23px;
   top: 10px;
   left: 0;
+  opacity: 0.5;
 }
+
+.filter__companys-input-checkbox:hover+label::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-off.svg") no-repeat;
+  width: 27px;
+  height: 23px;
+  top: 10px;
+  left: 0;
+  opacity: 0.8;
+}
+
+.filter__companys-input-checkbox:active+label::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-off.svg") no-repeat;
+  width: 27px;
+  height: 23px;
+  top: 10px;
+  left: 0;
+  opacity: 0.3;
+}
+
+
+
 
 .filter__companys-input-checkbox:checked+label::before {
   display: block;
@@ -1471,7 +1557,33 @@ fieldset {
   height: 23px;
   top: 10px;
   left: 0;
+  opacity: 0.6;
 }
+
+.filter__companys-input-checkbox:hover:checked+label::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-on.svg") no-repeat;
+  width: 27px;
+  height: 23px;
+  top: 10px;
+  left: 0;
+  opacity: 0.8;
+}
+
+.filter__companys-input-checkbox:active:checked+label::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-on.svg") no-repeat;
+  width: 27px;
+  height: 23px;
+  top: 10px;
+  left: 0;
+  opacity: 0.3;
+}
+
 
 .filter__power-input-radio+label::before {
   display: block;
@@ -1482,17 +1594,31 @@ fieldset {
   height: 25px;
   top: 10px;
   left: 0;
+  opacity: 0.6;
 }
 
-.filter__power-input-radio--active+label::before {
+.filter__power-input-radio:hover+label::before {
   display: block;
   content: "";
   position: absolute;
-  background: url("../img/radio-on.svg") no-repeat;
+  background: url("../img/radio-off.svg") no-repeat;
   width: 25px;
   height: 25px;
   top: 10px;
   left: 0;
+  opacity: 0.8;
+}
+
+.filter__power-input-radio:hover+label::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/radio-off.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  left: 0;
+  opacity: 0.3;
 }
 
 .filter__power-input-radio:checked+label::before {
@@ -1504,6 +1630,31 @@ fieldset {
   height: 25px;
   top: 10px;
   left: 0;
+  opacity: 0.6;
+}
+
+.filter__power-input-radio:hover:checked+label::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/radio-on.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  left: 0;
+  opacity: 0.8;
+}
+
+.filter__power-input-radio:active:checked+label::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url("../img/radio-on.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  left: 0;
+  opacity: 0.3;
 }
 
 .submit-button {
