@@ -19,7 +19,7 @@
           <svg class="icon-zoom" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
             <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
           </svg>
-          <input type="text" placeholder="Поиск" name="search"></input>
+          <input type="text" placeholder="Поиск:" name="search"></input>
         </form>
         <a href="#" class="header__top__bookmarks">
           <svg class="icon-bookmarks" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
@@ -53,9 +53,11 @@
               Равшан Джамшутович
             </a>
             <a href="#">
-              <svg class="icon-login" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
-                <path d="M14.875 8.5L6 0v6H0v5h6v6z" />
-                <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
+              <svg class="icon-logout" xmlns="http://www.w3.org/2000/svg" width="21" height="17">
+                <g>
+                  <path d="M21 8.5L12.125 0v6h-6v5h6v6z" />
+                  <path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z" />
+                </g>
               </svg>
             </a>
           </div>
@@ -91,7 +93,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
               <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z" /></svg>
           </li>
-          <li><a href="#">Инструменты</a></li>
+          <li><a href="#">Инструмент</a></li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
               <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z" /></svg>
@@ -103,9 +105,9 @@
       <section class="filter">
         <h2 class="visually-hidden">Фильтр по товарам ТЕХНОМАРТ</h2>
         <form class="filter__form" method="post" action="https://echo.htmlacademy.ru">
-          <span>Фильтр:</span>
+          <span class="filter__form__filter">Фильтр:</span>
           <div class="filter__range">
-            <h3>Цена</h3>
+            <legend>Цена</legend>
             <div class="filter__range__controls">
               <div class="scale">
                 <div class="bar"></div>
@@ -115,7 +117,7 @@
             </div>
             <div class="filter__range__data">
               <label class="filter__range__min-data"><input type="number" name="min-price" value="0"></label>
-              <p>-</p>
+              <span class="filter__range__line"></span>
               <label class="filter__range__max-data"><input type="number" name="max-price" value="30000"></label>
             </div>
           </div>
@@ -363,10 +365,10 @@
       <h2 class="visually-hidden">Контакты Техномарт</h2>
       <div class="container">
         <div class="footer__contacts">
-          <a class="logo logo__footer"><img src="img/logo-technomart.svg" width="110" height="18" alt="Логотип technomart" /></a>
+          <a class="logo logo__footer"><img src="img/logo-technomart.svg" width="138" height="21" alt="Логотип technomart" /></a>
           <div class="footer__top__contacts">
+            <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             <a class="footer__top__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            <address>г. Санкт__Петербург, ул. Б. Конюшенная, д. 19/8</address>
           </div>
         </div>
         <nav class="footer__nav">
@@ -380,7 +382,7 @@
           <ul class="footer__nav__bottom">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
-            <li><a href="#">Инструменты</a></li>
+            <li><a href="#">Инструмент</a></li>
             <li><a href="#">Спецпредложения</a></li>
           </ul>
         </nav>
@@ -389,17 +391,20 @@
     <section class="footer__bottom">
       <h2 class="visually-hidden">Социальные сети Техномарт</h2>
       <div class="container">
-        <p class="footer__bottom__copyright">© 2010–2019 Компания «Техномарт» <span>Все права защищены</span></p>
+        <div class="footer__bottom__copyright">
+          <p>© 2010–2019 Компания «Техномарт»<p>
+          <p>Все права защищены</p>
+        </div>
         <ul class="footer__bottom__social">
           <li><a href="#" class="social__button vk">vk</a></li>
           <li><a href="#" class="social__button fb">facebook</a></li>
           <li><a href="#" class="social__button inst">instagram</a></li>
         </ul>
         <div class="footer__bottom__mail">
-          <p>
+          <p class="footer__bottom__mail_p1">
             Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-          <p>
+          <p class="footer__bottom__mail_p2">
             Разработано — <a href="www.htmlacademy.ru">htmlacademy.ru</a>
           </p>
         </div>
