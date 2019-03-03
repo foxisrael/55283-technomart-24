@@ -16,10 +16,10 @@
         <h2 class="visually-hidden">ТЕХНОМАРТ</h2>
         <a class="logo" href="index.html"><img src="img/logo-technomart.svg" width="110" height="18" alt="Логотип technomart" /></a>
         <form class="header__top__formfind" method="post" action="https://echo.htmlacademy.ru">
+          <input type="text" placeholder="Поиск:" name="search"></input>
           <svg class="icon-zoom" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
             <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
           </svg>
-          <input type="text" placeholder="Поиск:" name="search"></input>
         </form>
         <a href="#" class="header__top__bookmarks">
           <svg class="icon-bookmarks" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
@@ -62,7 +62,7 @@
             </a>
           </div>
           <div class="header__middle__registration-bottom">
-            <a href="#">Мои заказы</a> <span></span> <a href="#">Личный кабинет</a></p>
+            <a href="#">Мои заказы</a> <span></span> <a href="#">Личный кабинет</a>
           </div>
         </div>
       </section>
@@ -106,7 +106,7 @@
         <h2 class="visually-hidden">Фильтр по товарам ТЕХНОМАРТ</h2>
         <form class="filter__form" method="post" action="https://echo.htmlacademy.ru">
           <span class="filter__form__filter">Фильтр:</span>
-          <div class="filter__range">
+          <fieldset class="filter__range">
             <legend>Цена</legend>
             <div class="filter__range__controls">
               <div class="scale">
@@ -120,7 +120,7 @@
               <span class="filter__range__line"></span>
               <label class="filter__range__max-data"><input type="number" name="max-price" value="30000"></label>
             </div>
-          </div>
+          </fieldset>
           <fieldset class="filter__companys">
             <legend>Производители</legend>
             <ul>
@@ -180,7 +180,7 @@
                   </button>
                   <button class="button button__bookmarks">В закладки</button>
                 </div>
-                <img src="img/bfg-3000.png" alt="Перфоратор BOSCH BFG 3000" class="product__cataloge__bfg3000">
+                <img src="img/bfg-3000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 3000" class="product__cataloge__bfg3000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 3000</a>
                 <p class="product__cataloge__oldprice">22500 Р.</p>
                 <a href="#" class="product__cataloge__newprice">15500 Р.</a>
@@ -197,7 +197,7 @@
                   </button>
                   <button class="button button__bookmarks">В закладки</button>
                 </div>
-                <img src="img/bfg-6000.png" alt="Перфоратор BOSCH BFG 6000" class="product__cataloge__bfg6000">
+                <img src="img/bfg-6000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 6000" class="product__cataloge__bfg6000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 6000</a>
                 <p class="product__cataloge__oldprice">30500 Р.</p>
                 <a href="#" class="product__cataloge__newprice">25500 Р.</a>
@@ -214,7 +214,7 @@
                   </button>
                   <button class="button button__bookmarks">В закладки</button>
                 </div>
-                <img src="img/bfg-2000.png" alt="Перфоратор BOSCH BFG 2000" class="product__cataloge__bfg2000">
+                <img src="img/bfg-2000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 2000" class="product__cataloge__bfg2000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 2000</a>
                 <p class="product__cataloge__oldprice visually-hidden ">30500 Р.</p>
                 <a href="#" class="product__cataloge__newprice">15500 Р.</a>
@@ -232,7 +232,7 @@
                   </button>
                   <button class="button button__bookmarks">В закладки</button>
                 </div>
-                <img src="img/bfg-3000.png" alt="Перфоратор BOSCH BFG 3000" class="product__cataloge__bfg3000">
+                <img src="img/bfg-3000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 3000" class="product__cataloge__bfg3000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 3000</a>
                 <p class="product__cataloge__oldprice">22500 Р.</p>
                 <a href="#" class="product__cataloge__newprice">15500 Р.</a>
@@ -249,7 +249,7 @@
                   </button>
                   <button class="button button__bookmarks">В закладки</button>
                 </div>
-                <img src="img/bfg-6000.png" alt="Перфоратор BOSCH BFG 6000" class="product__cataloge__bfg6000">
+                <img src="img/bfg-6000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 6000" class="product__cataloge__bfg6000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 6000</a>
                 <p class="product__cataloge__oldprice">30500 Р.</p>
                 <a href="#" class="product__cataloge__newprice">25500 Р.</a>
@@ -267,7 +267,7 @@
                   </button>
                   <button class="button button__bookmarks">В закладки</button>
                 </div>
-                <img src="img/bfg-2000.png" alt="Перфоратор BOSCH BFG 2000" class="product__cataloge__bfg2000">
+                <img src="img/bfg-2000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 2000" class="product__cataloge__bfg2000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 2000</a>
                 <p class="product__cataloge__oldprice visually-hidden ">30500 Р.</p>
                 <a href="#" class="product__cataloge__newprice">15500 Р.</a>
@@ -284,7 +284,7 @@
                   </button>
                   <button class="button button__bookmarks">В закладки</button>
                 </div>
-                <img src="img/bfg-3000.png" alt="Перфоратор BOSCH BFG 3000" class="product__cataloge__bfg3000">
+                <img src="img/bfg-3000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 3000" class="product__cataloge__bfg3000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 3000</a>
                 <p class="product__cataloge__oldprice">22500 Р.</p>
                 <a href="#" class="product__cataloge__newprice">15500 Р.</a>
@@ -302,7 +302,7 @@
                   </button>
                   <button class="button button__bookmarks">В закладки</button>
                 </div>
-                <img src="img/bfg-6000.png" alt="Перфоратор BOSCH BFG 6000" class="product__cataloge__bfg6000">
+                <img src="img/bfg-6000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 6000" class="product__cataloge__bfg6000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 6000</a>
                 <p class="product__cataloge__oldprice">30500 Р.</p>
                 <a href="#" class="product__cataloge__newprice">25500 Р.</a>
@@ -319,7 +319,7 @@
                   </button>
                   <button class="button button__bookmarks">В закладки</button>
                 </div>
-                <img src="img/bfg-2000.png" alt="Перфоратор BOSCH BFG 2000" class="product__cataloge__bfg2000">
+                <img src="img/bfg-2000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 2000" class="product__cataloge__bfg2000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 2000</a>
                 <p class="product__cataloge__oldprice visually-hidden ">30500 Р.</p>
                 <a href="#" class="product__cataloge__newprice">15500 Р.</a>
@@ -332,17 +332,22 @@
               <li><a class="product__pagination__item" href="#">Следующая</a></li>
             </ul>
           </div>
-          <!__ ПОПАП __>
-          <div class="product__popup visually-hidden">
-            <button type="button" class="popup__close"></button>
-            <div class="product__popup__header">
-              <img src="img/form-1.svg" alt="Иконка ОК" />
-              <p>Товар добавлен в корзину!</p>
-            </div>
-            <div class="product__popup__footer">
-              <button type="button">Оформить заказ</button>
-              <button type="button">Продолжить покупки!</button>
-            </div>
+        </div>
+
+        <!-- ПОПАП ПОКУПКИ ТОВАРА -->
+        <div class="product__popup visually-hidden">
+          <button class="popup__close" type="button">
+            <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+              <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" />
+            </svg>
+          </button>
+          <div class="product__popup__header">
+            <img src="img/form-1.svg" width="66" height="66" alt="Иконка ОК" />
+            <p>Товар добавлен в корзину!</p>
+          </div>
+          <div class="product__popup__footer">
+            <button type="button" class="button product__pop__button">Оформить заказ</button>
+            <button type="button" class="button product__pop__button">Продолжить покупки!</button>
           </div>
         </div>
       </section>
@@ -365,7 +370,7 @@
       <h2 class="visually-hidden">Контакты Техномарт</h2>
       <div class="container">
         <div class="footer__contacts">
-          <a class="logo logo__footer"><img src="img/logo-technomart.svg" width="138" height="21" alt="Логотип technomart" /></a>
+          <a href="index.html" class="logo logo__footer"><img src="img/logo-technomart.svg" width="138" height="21" alt="Логотип technomart" /></a>
           <div class="footer__top__contacts">
             <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             <a class="footer__top__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -375,7 +380,7 @@
           <ul class="footer__nav__top">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
+            <li><a>Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
@@ -405,7 +410,7 @@
             Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="footer__bottom__mail_p2">
-            Разработано — <a href="www.htmlacademy.ru">htmlacademy.ru</a>
+            Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
       </div>
