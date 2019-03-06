@@ -229,7 +229,6 @@ body {
 .header__middle__about {
   display: block;
   width: 200px;
-  font-family: Cuprum;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -365,7 +364,6 @@ body {
 }
 
 .header__middle__registration-bottom a {
-  font-family: cuprum;
   font-size: 16px;
   color: #32425c;
   text-align: center;
@@ -389,6 +387,7 @@ body {
   border-radius: 50%;
   top: -4px;
   margin: 0 5px;
+  vertical-align: middle;
 }
 
 .header__middle__login {
@@ -473,7 +472,6 @@ body {
 }
 
 .cataloge__item h3 {
-  font-family: Cuprum;
   font-size: 24px;
   color: #fff;
   margin: 0 0 18px 0;
@@ -541,7 +539,6 @@ body {
 }
 
 .cataloge__slider h2 {
-  font-family: cuprum;
   font-size: 36px;
   color: #fff;
   margin: 0 0 8px;
@@ -577,7 +574,6 @@ body {
 }
 
 .cataloge__slider p {
-  font-family: cuprum;
   font-size: 18px;
   color: #fff;
   margin: 0;
@@ -917,7 +913,6 @@ body {
 }
 
 .service__header h2 {
-  font-family: Cuprum;
   font-size: 30px;
   font-weight: normal;
   color: #000;
@@ -958,7 +953,6 @@ body {
   display: block;
   width: 240px;
   background: #32425c;
-  font-family: Cuprum;
   font-size: 21px;
   font-weight: bold;
   color: #fff;
@@ -1071,7 +1065,6 @@ body {
 .about__company li {
   display: block;
   position: relative;
-  font-family: cuprum;
   font-size: 18px;
   color: #000;
   margin-left: 35px;
@@ -1138,7 +1131,6 @@ body {
 .footer__top__contacts a,
 .footer__top__contacts address {
   color: #fff;
-  font-family: cuprum;
   font-size: 18px;
   font-style: normal;
   text-decoration: none;
@@ -1166,7 +1158,6 @@ body {
 
 .footer__nav li {
   text-align: center;
-  font-family: Cuprum;
   font-size: 18px;
   text-align: left;
 }
@@ -1829,7 +1820,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contacts__popup label {
-  font-family: Cuprum;
   font-size: 18px;
   color: #000;
   margin-bottom: 13px;
@@ -1887,6 +1877,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 450px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   z-index: 1;
+  background-color: #f4f2ed;
 }
 
 .product__popup {
