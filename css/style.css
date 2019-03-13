@@ -102,7 +102,6 @@ body {
 /* .search_form{
   text-indent: -9999px;
 } */
-
 .icon-zoom,
 .icon-bookmarks,
 .icon-cart {
@@ -1089,7 +1088,7 @@ body {
   margin-bottom: 30px;
 }
 
-.about__contacts a{
+.about__contacts a {
   display: block;
 }
 
@@ -1230,7 +1229,7 @@ body {
   margin-right: 5px;
 }
 
-.footer__bottom__social li:last-child{
+.footer__bottom__social li:last-child {
   margin-right: 0;
 }
 
@@ -1298,7 +1297,7 @@ body {
   margin: 0;
 }
 
-.footer__bottom__mail_p1{
+.footer__bottom__mail_p1 {
   margin-right: 51px;
 }
 
@@ -1329,7 +1328,10 @@ body {
   text-transform: uppercase;
   font-size: 13px;
   text-decoration: none;
-  margin-right: 10px;
+}
+
+.breadcrumbs li {
+  margin-right: 17px;
 }
 
 .filter {
@@ -1802,7 +1804,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding: 50px 80px 0;
+  padding: 45px 82px 0;
 }
 
 .contacts__popup__name,
@@ -1811,7 +1813,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contacts__popup__name {
-  margin-right: 30px;
+  margin-right: 33px;
 }
 
 .contacts__popup__name label,
@@ -1827,12 +1829,12 @@ input[type=number]::-webkit-outer-spin-button {
 .contacts__popup label {
   font-size: 18px;
   color: #000;
-  margin-bottom: 13px;
+  margin-bottom: 7px;
 }
 
 .contacts__popup input {
   width: 220px;
-  padding: 12px 14px;
+  padding: 9px 14px;
   border: 2px solid #dee3e4;
   border-radius: 2px;
   color: #a9a9a9;
@@ -1840,7 +1842,11 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 13px;
   outline: none;
   box-sizing: border-box;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
+}
+
+.contacts__popup__textarea{
+  margin-bottom: 30px;
 }
 
 .contacts__popup textarea {
@@ -1865,11 +1871,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 .popup__close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 8px;
+  right: 2px;
   fill: #ee3643;
   border: none;
-  background: inherit;
+  background: none;
   cursor: pointer;
   z-index: 3;
 }
@@ -1892,7 +1898,7 @@ input[type=number]::-webkit-outer-spin-button {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 620px;
-  height: 280px;
+  height: 275px;
   background: #fff;
   border-top: 7px solid #ff5357;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
@@ -1903,7 +1909,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 170px;
+  height: 165px;
   box-sizing: border-box;
   padding: 0px 0 0 80px;
 }
@@ -1911,6 +1917,9 @@ input[type=number]::-webkit-outer-spin-button {
 .product__popup__header p {
   font-size: 30px;
   margin: 0;
+  position: relative;
+  top: -5px;
+  left: 5px;
 }
 
 .product__popup__header img {
@@ -1929,4 +1938,14 @@ input[type=number]::-webkit-outer-spin-button {
 .product__pop__button {
   width: 220px;
   padding: 14px 0;
+}
+
+.product__pop__button--active {
+  background: #fff;
+  color: #000;
+}
+
+.product__pop__button--active:hover {
+  background: #fff;
+  color: #000;
 }
