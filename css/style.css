@@ -60,6 +60,9 @@ body {
 
 .header__top .container {
   height: 42px;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
 }
@@ -223,6 +226,9 @@ body {
 
 /* HEADER MIDDLE */
 .header__middle {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -275,6 +281,9 @@ body {
 }
 
 .header__middle__registration {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -420,6 +429,9 @@ body {
 }
 
 .header__nav ul {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -461,6 +473,9 @@ body {
 
 .cataloge__top,
 .cataloge__bottom {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -614,6 +629,9 @@ body {
 /* PRODUCT */
 .product__cataloge,
 .product__cataloge--inside {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -735,6 +753,9 @@ body {
 
 .product__header,
 .companys__header {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -825,6 +846,9 @@ body {
 }
 
 .product__pagination {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -863,6 +887,9 @@ body {
 }
 
 .companys__items {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -870,6 +897,9 @@ body {
 }
 
 .companys__item {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: center;
   width: calc(25% - 14px);
@@ -892,6 +922,9 @@ body {
 }
 
 .companys__item {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -935,6 +968,9 @@ body {
 }
 
 .service__features-content {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -1029,6 +1065,9 @@ body {
 }
 
 .about .container {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
   padding: 55px 0 86px;
@@ -1114,6 +1153,9 @@ body {
 }
 
 .footer__top .container {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
 }
@@ -1142,6 +1184,9 @@ body {
 }
 
 .footer__nav ul {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -1190,6 +1235,9 @@ body {
 }
 
 .footer__bottom .container {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
   color: #fff;
@@ -1214,6 +1262,9 @@ body {
 }
 
 .footer__bottom__social {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1268,6 +1319,9 @@ body {
 }
 
 .footer__bottom__mail {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
   font-size: 16px;
@@ -1303,6 +1357,9 @@ body {
 
 /* CATALOH.HTML */
 .breadcrumbs ul {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -1335,6 +1392,9 @@ body {
 }
 
 .filter {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
   padding: 23px 0 50px;
@@ -1345,6 +1405,9 @@ body {
 }
 
 .filter__products__line {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: flex-start;
   background: #f7f3ec;
@@ -1557,6 +1620,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .filter__range__data {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
   font-family: "pt sans";
@@ -1801,6 +1867,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contacts__popup form {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -1845,7 +1914,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 20px;
 }
 
-.contacts__popup__textarea{
+.contacts__popup__textarea {
   margin-bottom: 30px;
 }
 
@@ -1906,6 +1975,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .product__popup__header {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1927,6 +1999,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .product__popup__footer {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
