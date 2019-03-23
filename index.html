@@ -264,8 +264,8 @@
         <div class="about__contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href="https://goo.gl/maps/urK1izu9WmN2" target="_blank">
-            <img class="about__contacts__map" width="300" height="158" src="img/map-small.jpg" alt="Карта" />
+          <a class="about__contacts__map" href="https://goo.gl/maps/urK1izu9WmN2" target="_blank">
+            <img width="300" height="158" src="img/map-small.jpg" alt="Карта" />
           </a>
           <a href="#" class="button map__button">Заблудились? Напишите нам</a>
         </div>
@@ -295,7 +295,7 @@
           </div>
         </div>
         <!-- ПОПАП КАРТЫ -->
-        <div class="map__popup visually-hidden">
+        <div class="map__popup">
           <button class="popup__close" type="button">
             <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
               <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" />
@@ -354,24 +354,6 @@
       </div>
     </section>
   </footer>
-
-<script>
-    var link = document.querySelector(".header__top__checkout");
-    var popup = document.querySelector(".contacts__popup");
-    var close = document.querySelector(".popup__close");
-
-    link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("contacts__popup--show");
-    });
-
-    close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("contacts__popup--close");
-    });
-
-</script>
-
-
+  <script src="js/script.js"></script>
 </body>
 </html>
