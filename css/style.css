@@ -1855,6 +1855,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contacts__popup {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1864,6 +1865,14 @@ input[type=number]::-webkit-outer-spin-button {
   border-top: 7px solid #ff5357;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   z-index: 3;
+}
+
+.contacts__popup--show{
+  display: block;
+}
+
+.contacts__popup--close{
+  display: none;
 }
 
 .contacts__popup form {
@@ -1960,6 +1969,8 @@ input[type=number]::-webkit-outer-spin-button {
   z-index: 1;
   background-color: #f4f2ed;
 }
+
+
 
 .product__popup {
   position: fixed;
