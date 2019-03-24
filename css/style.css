@@ -1132,9 +1132,11 @@ body {
 }
 
 .about__contacts__map {
+  display: block;
   width: 300px;
   height: 158px;
   margin-bottom: 31px;
+  background: red;
 }
 
 .about__button {
@@ -1871,10 +1873,6 @@ input[type=number]::-webkit-outer-spin-button {
   display: block;
 }
 
-.contacts__popup--close{
-  display: none;
-}
-
 .contacts__popup form {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -1947,7 +1945,7 @@ input[type=number]::-webkit-outer-spin-button {
   background: #f4f4f4;
 }
 
-.popup__close {
+.button__close {
   position: absolute;
   top: 8px;
   right: 2px;
@@ -1972,7 +1970,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .map__popup--show{
-  display: inherit;
+  display: block;
 }
 
 .product__popup {
@@ -1992,10 +1990,6 @@ input[type=number]::-webkit-outer-spin-button {
 .product__popup--show{
   display: block;
 }
-
-/* .product__popup--show{
-  display: inherit;
-} */
 
 .product__popup__header {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
