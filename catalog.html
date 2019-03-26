@@ -31,13 +31,13 @@
             <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
           </svg>
           Корзина: 10</a>
-        <a href="#" class="header__top__checkout">Оформить заказ</a>
+        <a href="contacts.html" class="header__top__checkout">Оформить заказ</a>
       </div>
     </section>
     <div class="container">
       <section class="header__middle">
         <h2 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
-        <p class="header__middle__about">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <p class="header__middle__about">Интернет-магазин строительных материалов &nbsp; и инструментов для ремонта</p>
         <div class="header__middle__contacts">
           <a class="header__middle__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <address>г. Санкт__Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -105,7 +105,7 @@
         <form class="filter__form" method="post" action="https://echo.htmlacademy.ru">
           <span class="filter__form__filter">Фильтр:</span>
           <fieldset class="filter__range">
-            <legend>Цена</legend>
+            <legend class="filter__range__header">Цена</legend>
             <div class="filter__range__controls">
               <div class="scale">
                 <div class="bar"></div>
@@ -120,7 +120,7 @@
             </div>
           </fieldset>
           <fieldset class="filter__companys">
-            <legend>Производители</legend>
+            <legend class="filter__companys__header">Производители</legend>
             <ul>
               <li><input type="checkbox" class="filter__companys-input-checkbox" name="Bosch" id="bosch" checked />
                 <label for="bosch">Вosch</label></li>
@@ -135,7 +135,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter__power">
-            <legend>Питание</legend>
+            <legend class="filter__power__header">Питание</legend>
             <ul>
               <li><input type="radio" class="filter__power-input-radio" name="energy" value="АККУМУЛЯТОРНЫЕ" id="battery" checked />
                 <label for="battery">АККУМУЛЯТОРНЫЕ</label></li>
@@ -151,16 +151,20 @@
             <li><a href="#" class="filter__products__price filter__products__price--active">По цене</a></li>
             <li><a href="#" class="filter__products__type">По типу</a></li>
             <li><a href="#" class="filter__products__function">По функционалу</a></li>
-            <li><a href="#" class="filter__products__lineup filter__products__lineup--active">
+            <li>
+              <a href="#" class="filter__products__lineup filter__products__lineup--active">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path d="M5.5 0L0 10h11z" />
                 </svg>
-              </a></li>
+                сортировка вверх
+              </a>
+            </li>
             <li>
               <a href="#" class="filter__products__linedown">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path d="M5.5 10L0 0h11" />
                 </svg>
+                сортировка вниз
               </a>
             </li>
           </ul>
@@ -168,15 +172,15 @@
             <div class="product__cataloge--inside">
               <div class="product__cataloge__item--inside">
                 <div class="product__cataloge__item-buy product__cataloge__item-buy--hidden">
-                  <button class="button button__buy">
+                  <a href="#" class="product__cataloge__buy">
                     <svg class="icon-busket" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                       <circle cx="4.5" cy="13.5" r="1.5" />
                       <circle cx="12.5" cy="13.5" r="1.5" />
                       <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                     </svg>
                     Купить
-                  </button>
-                  <button class="button button__bookmarks">В закладки</button>
+                  </a>
+                  <a href="#" class="product__cataloge__bookmarks">В закладки</a>
                 </div>
                 <img src="img/bfg-3000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 3000" class="product__cataloge__bfg3000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 3000</a>
@@ -185,15 +189,15 @@
               </div>
               <div class="product__cataloge__item--inside">
                 <div class="product__cataloge__item-buy product__cataloge__item-buy--hidden">
-                  <button class="button button__buy">
+                  <a href="#" class="product__cataloge__buy">
                     <svg class="icon-busket" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                       <circle cx="4.5" cy="13.5" r="1.5" />
                       <circle cx="12.5" cy="13.5" r="1.5" />
                       <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                     </svg>
                     Купить
-                  </button>
-                  <button class="button button__bookmarks">В закладки</button>
+                  </a>
+                  <a href="#" class="product__cataloge__bookmarks">В закладки</a>
                 </div>
                 <img src="img/bfg-6000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 6000" class="product__cataloge__bfg6000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 6000</a>
@@ -202,15 +206,15 @@
               </div>
               <div class="product__cataloge__item--inside">
                 <div class="product__cataloge__item-buy product__cataloge__item-buy--hidden">
-                  <button class="button button__buy">
+                  <a href="#" class="product__cataloge__buy">
                     <svg class="icon-busket" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                       <circle cx="4.5" cy="13.5" r="1.5" />
                       <circle cx="12.5" cy="13.5" r="1.5" />
                       <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                     </svg>
                     Купить
-                  </button>
-                  <button class="button button__bookmarks">В закладки</button>
+                  </a>
+                  <a href="#" class="product__cataloge__bookmarks">В закладки</a>
                 </div>
                 <img src="img/bfg-2000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 2000" class="product__cataloge__bfg2000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 2000</a>
@@ -220,15 +224,15 @@
               </div>
               <div class="product__cataloge__item--inside">
                 <div class="product__cataloge__item-buy product__cataloge__item-buy--hidden">
-                  <button class="button button__buy">
+                  <a href="#" class="product__cataloge__buy">
                     <svg class="icon-busket" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                       <circle cx="4.5" cy="13.5" r="1.5" />
                       <circle cx="12.5" cy="13.5" r="1.5" />
                       <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                     </svg>
                     Купить
-                  </button>
-                  <button class="button button__bookmarks">В закладки</button>
+                  </a>
+                  <a href="#" class="product__cataloge__bookmarks">В закладки</a>
                 </div>
                 <img src="img/bfg-3000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 3000" class="product__cataloge__bfg3000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 3000</a>
@@ -237,15 +241,15 @@
               </div>
               <div class="product__cataloge__item--inside">
                 <div class="product__cataloge__item-buy product__cataloge__item-buy--hidden">
-                  <button class="button button__buy">
+                  <a href="#" class="product__cataloge__buy">
                     <svg class="icon-busket" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                       <circle cx="4.5" cy="13.5" r="1.5" />
                       <circle cx="12.5" cy="13.5" r="1.5" />
                       <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                     </svg>
                     Купить
-                  </button>
-                  <button class="button button__bookmarks">В закладки</button>
+                  </a>
+                  <a href="#" class="product__cataloge__bookmarks">В закладки</a>
                 </div>
                 <img src="img/bfg-6000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 6000" class="product__cataloge__bfg6000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 6000</a>
@@ -255,15 +259,15 @@
               </div>
               <div class="product__cataloge__item--inside">
                 <div class="product__cataloge__item-buy product__cataloge__item-buy--hidden">
-                  <button class="button button__buy">
+                  <a href="#" class="product__cataloge__buy">
                     <svg class="icon-busket" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                       <circle cx="4.5" cy="13.5" r="1.5" />
                       <circle cx="12.5" cy="13.5" r="1.5" />
                       <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                     </svg>
                     Купить
-                  </button>
-                  <button class="button button__bookmarks">В закладки</button>
+                  </a>
+                  <a href="#" class="product__cataloge__bookmarks">В закладки</a>
                 </div>
                 <img src="img/bfg-2000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 2000" class="product__cataloge__bfg2000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 2000</a>
@@ -272,15 +276,15 @@
               </div>
               <div class="product__cataloge__item--inside">
                 <div class="product__cataloge__item-buy product__cataloge__item-buy--hidden">
-                  <button class="button button__buy">
+                  <a href="#" class="product__cataloge__buy">
                     <svg class="icon-busket" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                       <circle cx="4.5" cy="13.5" r="1.5" />
                       <circle cx="12.5" cy="13.5" r="1.5" />
                       <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                     </svg>
                     Купить
-                  </button>
-                  <button class="button button__bookmarks">В закладки</button>
+                  </a>
+                  <a href="#" class="product__cataloge__bookmarks">В закладки</a>
                 </div>
                 <img src="img/bfg-3000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 3000" class="product__cataloge__bfg3000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 3000</a>
@@ -290,15 +294,15 @@
               </div>
               <div class="product__cataloge__item--inside">
                 <div class="product__cataloge__item-buy product__cataloge__item-buy--hidden">
-                  <button class="button button__buy">
+                  <a href="#" class="product__cataloge__buy">
                     <svg class="icon-busket" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                       <circle cx="4.5" cy="13.5" r="1.5" />
                       <circle cx="12.5" cy="13.5" r="1.5" />
                       <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                     </svg>
                     Купить
-                  </button>
-                  <button class="button button__bookmarks">В закладки</button>
+                  </a>
+                  <a href="#" class="product__cataloge__bookmarks">В закладки</a>
                 </div>
                 <img src="img/bfg-6000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 6000" class="product__cataloge__bfg6000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 6000</a>
@@ -307,15 +311,15 @@
               </div>
               <div class="product__cataloge__item--inside">
                 <div class="product__cataloge__item-buy product__cataloge__item-buy--hidden">
-                  <button class="button button__buy">
+                  <a href="#" class="product__cataloge__buy">
                     <svg class="icon-busket" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                       <circle cx="4.5" cy="13.5" r="1.5" />
                       <circle cx="12.5" cy="13.5" r="1.5" />
                       <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                     </svg>
                     Купить
-                  </button>
-                  <button class="button button__bookmarks">В закладки</button>
+                  </a>
+                  <a href="#" class="product__cataloge__bookmarks">В закладки</a>
                 </div>
                 <img src="img/bfg-2000.png" width="218" height="99" alt="Перфоратор BOSCH BFG 2000" class="product__cataloge__bfg2000">
                 <a href="#" class="product__cataloge__header">Перфоратор BOSCH BFG 2000</a>
@@ -338,7 +342,8 @@
       <div class="container">
         <div class="main_about-information">
           <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. </p>
+          <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </div>
         <!-- ПОПАП ОБРАТНОЙ СВЯЗИ -->
         <div class="contacts__popup">
